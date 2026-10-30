@@ -1,0 +1,1907 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e40cdddcb7c97ce5403984dbbf23f8f6 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e40cdddcb7c97ce5403984dbbf23f8f6" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e40cdddcb7c97ce5403984dbbf23f8f6 = L.map(
+                "map_e40cdddcb7c97ce5403984dbbf23f8f6",
+                {
+                    center: [21.028, 105.79],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 14,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_acb6cc29c74e4205378e634a6d23bc35 = L.tileLayer(
+                "https://mt1.google.com/vt/lyrs=m\u0026x={x}\u0026y={y}\u0026z={z}",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "Google Maps",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_acb6cc29c74e4205378e634a6d23bc35.addTo(map_e40cdddcb7c97ce5403984dbbf23f8f6);
+        
+    
+            var marker_96be53a7f6faa89e74d45fe3a16ae1ae = L.marker(
+                [21.052114, 105.790528],
+                {
+}
+            ).addTo(map_e40cdddcb7c97ce5403984dbbf23f8f6);
+        
+    
+            var div_icon_2c36df48ca129d17903e63ab53a8588e = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    background-color: #e74c3c;\n                    color: white;\n                    border-radius: 50%;\n                    width: 24px;\n                    height: 24px;\n                    display: flex;\n                    justify-content: center;\n                    align-items: center;\n                    font-weight: bold;\n                    font-family: Arial, sans-serif;\n                    font-size: 12px;\n                    border: 2px solid white;\n                    box-shadow: 1px 1px 3px rgba(0,0,0,0.5);\n                \"\u003e1\u003c/div\u003e\n            ",
+  "iconSize": [24, 24],
+  "iconAnchor": [12, 12],
+  "className": "empty",
+});
+        
+    
+        var popup_3550ba4cbd795df0a3825166547d57d9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8c0dc459edc7c3863fc9cc14cdd3dc34 = $(`<div id="html_8c0dc459edc7c3863fc9cc14cdd3dc34" style="width: 100.0%; height: 100.0%;">Tọa độ: 21.052114, 105.790528</div>`)[0];
+                popup_3550ba4cbd795df0a3825166547d57d9.setContent(html_8c0dc459edc7c3863fc9cc14cdd3dc34);
+            
+        
+
+        marker_96be53a7f6faa89e74d45fe3a16ae1ae.bindPopup(popup_3550ba4cbd795df0a3825166547d57d9)
+        ;
+
+        
+    
+    
+            marker_96be53a7f6faa89e74d45fe3a16ae1ae.bindTooltip(
+                `<div>
+                     Điểm 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_96be53a7f6faa89e74d45fe3a16ae1ae.setIcon(div_icon_2c36df48ca129d17903e63ab53a8588e);
+            
+    
+            var marker_1d83c66484eeabf6468e6eec99aaa611 = L.marker(
+                [21.007536, 105.793812],
+                {
+}
+            ).addTo(map_e40cdddcb7c97ce5403984dbbf23f8f6);
+        
+    
+            var div_icon_60c2ee25086dc4fbcb43e5a9b74c762d = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    background-color: #3498db;\n                    color: white;\n                    border-radius: 50%;\n                    width: 24px;\n                    height: 24px;\n                    display: flex;\n                    justify-content: center;\n                    align-items: center;\n                    font-weight: bold;\n                    font-family: Arial, sans-serif;\n                    font-size: 12px;\n                    border: 2px solid white;\n                    box-shadow: 1px 1px 3px rgba(0,0,0,0.5);\n                \"\u003e2\u003c/div\u003e\n            ",
+  "iconSize": [24, 24],
+  "iconAnchor": [12, 12],
+  "className": "empty",
+});
+        
+    
+        var popup_a3aacab0e611f5a9985d477d9c450fa9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_20f5950c0c16e541147ec34c9a538382 = $(`<div id="html_20f5950c0c16e541147ec34c9a538382" style="width: 100.0%; height: 100.0%;">Tọa độ: 21.007536, 105.793812</div>`)[0];
+                popup_a3aacab0e611f5a9985d477d9c450fa9.setContent(html_20f5950c0c16e541147ec34c9a538382);
+            
+        
+
+        marker_1d83c66484eeabf6468e6eec99aaa611.bindPopup(popup_a3aacab0e611f5a9985d477d9c450fa9)
+        ;
+
+        
+    
+    
+            marker_1d83c66484eeabf6468e6eec99aaa611.bindTooltip(
+                `<div>
+                     Điểm 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1d83c66484eeabf6468e6eec99aaa611.setIcon(div_icon_60c2ee25086dc4fbcb43e5a9b74c762d);
+            
+    
+            var marker_bfb3f90ab49f5db244f93a8723826d81 = L.marker(
+                [21.036941, 105.774815],
+                {
+}
+            ).addTo(map_e40cdddcb7c97ce5403984dbbf23f8f6);
+        
+    
+            var div_icon_275bbeea3b726690791812876ffe17e2 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    background-color: #3498db;\n                    color: white;\n                    border-radius: 50%;\n                    width: 24px;\n                    height: 24px;\n                    display: flex;\n                    justify-content: center;\n                    align-items: center;\n                    font-weight: bold;\n                    font-family: Arial, sans-serif;\n                    font-size: 12px;\n                    border: 2px solid white;\n                    box-shadow: 1px 1px 3px rgba(0,0,0,0.5);\n                \"\u003e3\u003c/div\u003e\n            ",
+  "iconSize": [24, 24],
+  "iconAnchor": [12, 12],
+  "className": "empty",
+});
+        
+    
+        var popup_49443674077187cf5b688c8d4c099122 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4775ea276ab7b59f8143797a513ca769 = $(`<div id="html_4775ea276ab7b59f8143797a513ca769" style="width: 100.0%; height: 100.0%;">Tọa độ: 21.036941, 105.774815</div>`)[0];
+                popup_49443674077187cf5b688c8d4c099122.setContent(html_4775ea276ab7b59f8143797a513ca769);
+            
+        
+
+        marker_bfb3f90ab49f5db244f93a8723826d81.bindPopup(popup_49443674077187cf5b688c8d4c099122)
+        ;
+
+        
+    
+    
+            marker_bfb3f90ab49f5db244f93a8723826d81.bindTooltip(
+                `<div>
+                     Điểm 3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bfb3f90ab49f5db244f93a8723826d81.setIcon(div_icon_275bbeea3b726690791812876ffe17e2);
+            
+    
+            var marker_9144d9d7326ff6fb4d9e4351506b80e1 = L.marker(
+                [21.045812, 105.803109],
+                {
+}
+            ).addTo(map_e40cdddcb7c97ce5403984dbbf23f8f6);
+        
+    
+            var div_icon_8c4cc14dbd7405b4ea092ab3c220e8c1 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    background-color: #3498db;\n                    color: white;\n                    border-radius: 50%;\n                    width: 24px;\n                    height: 24px;\n                    display: flex;\n                    justify-content: center;\n                    align-items: center;\n                    font-weight: bold;\n                    font-family: Arial, sans-serif;\n                    font-size: 12px;\n                    border: 2px solid white;\n                    box-shadow: 1px 1px 3px rgba(0,0,0,0.5);\n                \"\u003e4\u003c/div\u003e\n            ",
+  "iconSize": [24, 24],
+  "iconAnchor": [12, 12],
+  "className": "empty",
+});
+        
+    
+        var popup_993a89483eb743516fc2798df338d8b7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_41e48c69ce415c2d009b186b6d5b6b55 = $(`<div id="html_41e48c69ce415c2d009b186b6d5b6b55" style="width: 100.0%; height: 100.0%;">Tọa độ: 21.045812, 105.803109</div>`)[0];
+                popup_993a89483eb743516fc2798df338d8b7.setContent(html_41e48c69ce415c2d009b186b6d5b6b55);
+            
+        
+
+        marker_9144d9d7326ff6fb4d9e4351506b80e1.bindPopup(popup_993a89483eb743516fc2798df338d8b7)
+        ;
+
+        
+    
+    
+            marker_9144d9d7326ff6fb4d9e4351506b80e1.bindTooltip(
+                `<div>
+                     Điểm 4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9144d9d7326ff6fb4d9e4351506b80e1.setIcon(div_icon_8c4cc14dbd7405b4ea092ab3c220e8c1);
+            
+    
+            var marker_6580455f8dd133c9c65d390f695444cd = L.marker(
+                [21.012537, 105.803318],
+                {
+}
+            ).addTo(map_e40cdddcb7c97ce5403984dbbf23f8f6);
+        
+    
+            var div_icon_b0bcda98b8c2374245465531b6887891 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    background-color: #3498db;\n                    color: white;\n                    border-radius: 50%;\n                    width: 24px;\n                    height: 24px;\n                    display: flex;\n                    justify-content: center;\n                    align-items: center;\n                    font-weight: bold;\n                    font-family: Arial, sans-serif;\n                    font-size: 12px;\n                    border: 2px solid white;\n                    box-shadow: 1px 1px 3px rgba(0,0,0,0.5);\n                \"\u003e5\u003c/div\u003e\n            ",
+  "iconSize": [24, 24],
+  "iconAnchor": [12, 12],
+  "className": "empty",
+});
+        
+    
+        var popup_3dd0cf4bc1f1f27e225177a6f7c687af = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5cf62fe88210b16661b6c467b6094778 = $(`<div id="html_5cf62fe88210b16661b6c467b6094778" style="width: 100.0%; height: 100.0%;">Tọa độ: 21.012537, 105.803318</div>`)[0];
+                popup_3dd0cf4bc1f1f27e225177a6f7c687af.setContent(html_5cf62fe88210b16661b6c467b6094778);
+            
+        
+
+        marker_6580455f8dd133c9c65d390f695444cd.bindPopup(popup_3dd0cf4bc1f1f27e225177a6f7c687af)
+        ;
+
+        
+    
+    
+            marker_6580455f8dd133c9c65d390f695444cd.bindTooltip(
+                `<div>
+                     Điểm 5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6580455f8dd133c9c65d390f695444cd.setIcon(div_icon_b0bcda98b8c2374245465531b6887891);
+            
+    
+            var marker_0d534895c3066e19ab830c775940b595 = L.marker(
+                [21.035218, 105.775529],
+                {
+}
+            ).addTo(map_e40cdddcb7c97ce5403984dbbf23f8f6);
+        
+    
+            var div_icon_53c8469d55aa9ae645242a548cfa3b43 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    background-color: #3498db;\n                    color: white;\n                    border-radius: 50%;\n                    width: 24px;\n                    height: 24px;\n                    display: flex;\n                    justify-content: center;\n                    align-items: center;\n                    font-weight: bold;\n                    font-family: Arial, sans-serif;\n                    font-size: 12px;\n                    border: 2px solid white;\n                    box-shadow: 1px 1px 3px rgba(0,0,0,0.5);\n                \"\u003e6\u003c/div\u003e\n            ",
+  "iconSize": [24, 24],
+  "iconAnchor": [12, 12],
+  "className": "empty",
+});
+        
+    
+        var popup_5dc514ab31acb7c0fbe8f01310646b29 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a00b1044899bd33c92cffb41d787e566 = $(`<div id="html_a00b1044899bd33c92cffb41d787e566" style="width: 100.0%; height: 100.0%;">Tọa độ: 21.035218, 105.775529</div>`)[0];
+                popup_5dc514ab31acb7c0fbe8f01310646b29.setContent(html_a00b1044899bd33c92cffb41d787e566);
+            
+        
+
+        marker_0d534895c3066e19ab830c775940b595.bindPopup(popup_5dc514ab31acb7c0fbe8f01310646b29)
+        ;
+
+        
+    
+    
+            marker_0d534895c3066e19ab830c775940b595.bindTooltip(
+                `<div>
+                     Điểm 6
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0d534895c3066e19ab830c775940b595.setIcon(div_icon_53c8469d55aa9ae645242a548cfa3b43);
+            
+    
+            var marker_50a7f50df942b200deba2ec5cf64ea58 = L.marker(
+                [21.030517, 105.803241],
+                {
+}
+            ).addTo(map_e40cdddcb7c97ce5403984dbbf23f8f6);
+        
+    
+            var div_icon_01a07ca19581d1ea45260716725230ac = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    background-color: #3498db;\n                    color: white;\n                    border-radius: 50%;\n                    width: 24px;\n                    height: 24px;\n                    display: flex;\n                    justify-content: center;\n                    align-items: center;\n                    font-weight: bold;\n                    font-family: Arial, sans-serif;\n                    font-size: 12px;\n                    border: 2px solid white;\n                    box-shadow: 1px 1px 3px rgba(0,0,0,0.5);\n                \"\u003e7\u003c/div\u003e\n            ",
+  "iconSize": [24, 24],
+  "iconAnchor": [12, 12],
+  "className": "empty",
+});
+        
+    
+        var popup_eff696278374d5e96acc216666faab7f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bc1eb1c38afea8cb202fb2a68375417f = $(`<div id="html_bc1eb1c38afea8cb202fb2a68375417f" style="width: 100.0%; height: 100.0%;">Tọa độ: 21.030517, 105.803241</div>`)[0];
+                popup_eff696278374d5e96acc216666faab7f.setContent(html_bc1eb1c38afea8cb202fb2a68375417f);
+            
+        
+
+        marker_50a7f50df942b200deba2ec5cf64ea58.bindPopup(popup_eff696278374d5e96acc216666faab7f)
+        ;
+
+        
+    
+    
+            marker_50a7f50df942b200deba2ec5cf64ea58.bindTooltip(
+                `<div>
+                     Điểm 7
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_50a7f50df942b200deba2ec5cf64ea58.setIcon(div_icon_01a07ca19581d1ea45260716725230ac);
+            
+    
+            var marker_f87e851709c26ff9cca4d8a8388efa9b = L.marker(
+                [21.007834, 105.797219],
+                {
+}
+            ).addTo(map_e40cdddcb7c97ce5403984dbbf23f8f6);
+        
+    
+            var div_icon_f3bd5f7ca29896c7c8ae5d6408da3653 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    background-color: #3498db;\n                    color: white;\n                    border-radius: 50%;\n                    width: 24px;\n                    height: 24px;\n                    display: flex;\n                    justify-content: center;\n                    align-items: center;\n                    font-weight: bold;\n                    font-family: Arial, sans-serif;\n                    font-size: 12px;\n                    border: 2px solid white;\n                    box-shadow: 1px 1px 3px rgba(0,0,0,0.5);\n                \"\u003e8\u003c/div\u003e\n            ",
+  "iconSize": [24, 24],
+  "iconAnchor": [12, 12],
+  "className": "empty",
+});
+        
+    
+        var popup_065f6acda7cfdbe4a3166f48b61f6201 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4a35996f000bbd9851f0d3f8ac0c5710 = $(`<div id="html_4a35996f000bbd9851f0d3f8ac0c5710" style="width: 100.0%; height: 100.0%;">Tọa độ: 21.007834, 105.797219</div>`)[0];
+                popup_065f6acda7cfdbe4a3166f48b61f6201.setContent(html_4a35996f000bbd9851f0d3f8ac0c5710);
+            
+        
+
+        marker_f87e851709c26ff9cca4d8a8388efa9b.bindPopup(popup_065f6acda7cfdbe4a3166f48b61f6201)
+        ;
+
+        
+    
+    
+            marker_f87e851709c26ff9cca4d8a8388efa9b.bindTooltip(
+                `<div>
+                     Điểm 8
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f87e851709c26ff9cca4d8a8388efa9b.setIcon(div_icon_f3bd5f7ca29896c7c8ae5d6408da3653);
+            
+    
+            var marker_fd041253c31e60268ae1614afb6fc1fb = L.marker(
+                [21.036142, 105.789135],
+                {
+}
+            ).addTo(map_e40cdddcb7c97ce5403984dbbf23f8f6);
+        
+    
+            var div_icon_45105526df21d832e5af7906adb2f455 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    background-color: #3498db;\n                    color: white;\n                    border-radius: 50%;\n                    width: 24px;\n                    height: 24px;\n                    display: flex;\n                    justify-content: center;\n                    align-items: center;\n                    font-weight: bold;\n                    font-family: Arial, sans-serif;\n                    font-size: 12px;\n                    border: 2px solid white;\n                    box-shadow: 1px 1px 3px rgba(0,0,0,0.5);\n                \"\u003e9\u003c/div\u003e\n            ",
+  "iconSize": [24, 24],
+  "iconAnchor": [12, 12],
+  "className": "empty",
+});
+        
+    
+        var popup_079060631557556f8e004fe09b2da148 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8ca2e264207f607b9319284070768c4c = $(`<div id="html_8ca2e264207f607b9319284070768c4c" style="width: 100.0%; height: 100.0%;">Tọa độ: 21.036142, 105.789135</div>`)[0];
+                popup_079060631557556f8e004fe09b2da148.setContent(html_8ca2e264207f607b9319284070768c4c);
+            
+        
+
+        marker_fd041253c31e60268ae1614afb6fc1fb.bindPopup(popup_079060631557556f8e004fe09b2da148)
+        ;
+
+        
+    
+    
+            marker_fd041253c31e60268ae1614afb6fc1fb.bindTooltip(
+                `<div>
+                     Điểm 9
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fd041253c31e60268ae1614afb6fc1fb.setIcon(div_icon_45105526df21d832e5af7906adb2f455);
+            
+    
+            var marker_70026e48bc6a82cfbba96bb3acc73ccd = L.marker(
+                [21.036815, 105.782718],
+                {
+}
+            ).addTo(map_e40cdddcb7c97ce5403984dbbf23f8f6);
+        
+    
+            var div_icon_66076f88f86fd7e5bc317d596a0ce0e7 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    background-color: #3498db;\n                    color: white;\n                    border-radius: 50%;\n                    width: 24px;\n                    height: 24px;\n                    display: flex;\n                    justify-content: center;\n                    align-items: center;\n                    font-weight: bold;\n                    font-family: Arial, sans-serif;\n                    font-size: 12px;\n                    border: 2px solid white;\n                    box-shadow: 1px 1px 3px rgba(0,0,0,0.5);\n                \"\u003e10\u003c/div\u003e\n            ",
+  "iconSize": [24, 24],
+  "iconAnchor": [12, 12],
+  "className": "empty",
+});
+        
+    
+        var popup_97cdc30786171138c7eac07147aee430 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e57577b9a6e29bc942d5e7c7787b5b3b = $(`<div id="html_e57577b9a6e29bc942d5e7c7787b5b3b" style="width: 100.0%; height: 100.0%;">Tọa độ: 21.036815, 105.782718</div>`)[0];
+                popup_97cdc30786171138c7eac07147aee430.setContent(html_e57577b9a6e29bc942d5e7c7787b5b3b);
+            
+        
+
+        marker_70026e48bc6a82cfbba96bb3acc73ccd.bindPopup(popup_97cdc30786171138c7eac07147aee430)
+        ;
+
+        
+    
+    
+            marker_70026e48bc6a82cfbba96bb3acc73ccd.bindTooltip(
+                `<div>
+                     Điểm 10
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_70026e48bc6a82cfbba96bb3acc73ccd.setIcon(div_icon_66076f88f86fd7e5bc317d596a0ce0e7);
+            
+    
+            var marker_4327eac9177912fc9cf9d66fa95874d7 = L.marker(
+                [21.037311, 105.783429],
+                {
+}
+            ).addTo(map_e40cdddcb7c97ce5403984dbbf23f8f6);
+        
+    
+            var div_icon_82f7119a8b03e8edb5a9c8c428306c66 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    background-color: #3498db;\n                    color: white;\n                    border-radius: 50%;\n                    width: 24px;\n                    height: 24px;\n                    display: flex;\n                    justify-content: center;\n                    align-items: center;\n                    font-weight: bold;\n                    font-family: Arial, sans-serif;\n                    font-size: 12px;\n                    border: 2px solid white;\n                    box-shadow: 1px 1px 3px rgba(0,0,0,0.5);\n                \"\u003e11\u003c/div\u003e\n            ",
+  "iconSize": [24, 24],
+  "iconAnchor": [12, 12],
+  "className": "empty",
+});
+        
+    
+        var popup_77d7c420b713af1530c9a5d9e97a9943 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_69962c946674ca5a96f8951146f3dc72 = $(`<div id="html_69962c946674ca5a96f8951146f3dc72" style="width: 100.0%; height: 100.0%;">Tọa độ: 21.037311, 105.783429</div>`)[0];
+                popup_77d7c420b713af1530c9a5d9e97a9943.setContent(html_69962c946674ca5a96f8951146f3dc72);
+            
+        
+
+        marker_4327eac9177912fc9cf9d66fa95874d7.bindPopup(popup_77d7c420b713af1530c9a5d9e97a9943)
+        ;
+
+        
+    
+    
+            marker_4327eac9177912fc9cf9d66fa95874d7.bindTooltip(
+                `<div>
+                     Điểm 11
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4327eac9177912fc9cf9d66fa95874d7.setIcon(div_icon_82f7119a8b03e8edb5a9c8c428306c66);
+            
+    
+            var marker_bcc55e495a0a0cab5fcd751fde356b04 = L.marker(
+                [21.038144, 105.782105],
+                {
+}
+            ).addTo(map_e40cdddcb7c97ce5403984dbbf23f8f6);
+        
+    
+            var div_icon_4625cf5977e4b155f6d960aa1d1cb436 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    background-color: #3498db;\n                    color: white;\n                    border-radius: 50%;\n                    width: 24px;\n                    height: 24px;\n                    display: flex;\n                    justify-content: center;\n                    align-items: center;\n                    font-weight: bold;\n                    font-family: Arial, sans-serif;\n                    font-size: 12px;\n                    border: 2px solid white;\n                    box-shadow: 1px 1px 3px rgba(0,0,0,0.5);\n                \"\u003e12\u003c/div\u003e\n            ",
+  "iconSize": [24, 24],
+  "iconAnchor": [12, 12],
+  "className": "empty",
+});
+        
+    
+        var popup_a5d7f716f5fb693a998b1db271b0b6bb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_08ce94ce5085297a569c48edc1eba832 = $(`<div id="html_08ce94ce5085297a569c48edc1eba832" style="width: 100.0%; height: 100.0%;">Tọa độ: 21.038144, 105.782105</div>`)[0];
+                popup_a5d7f716f5fb693a998b1db271b0b6bb.setContent(html_08ce94ce5085297a569c48edc1eba832);
+            
+        
+
+        marker_bcc55e495a0a0cab5fcd751fde356b04.bindPopup(popup_a5d7f716f5fb693a998b1db271b0b6bb)
+        ;
+
+        
+    
+    
+            marker_bcc55e495a0a0cab5fcd751fde356b04.bindTooltip(
+                `<div>
+                     Điểm 12
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bcc55e495a0a0cab5fcd751fde356b04.setIcon(div_icon_4625cf5977e4b155f6d960aa1d1cb436);
+            
+    
+            var marker_87ec83d039d6552b55cdede1cd1bd025 = L.marker(
+                [21.038431, 105.785219],
+                {
+}
+            ).addTo(map_e40cdddcb7c97ce5403984dbbf23f8f6);
+        
+    
+            var div_icon_9a3483474712867328492bfd43a937e1 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    background-color: #3498db;\n                    color: white;\n                    border-radius: 50%;\n                    width: 24px;\n                    height: 24px;\n                    display: flex;\n                    justify-content: center;\n                    align-items: center;\n                    font-weight: bold;\n                    font-family: Arial, sans-serif;\n                    font-size: 12px;\n                    border: 2px solid white;\n                    box-shadow: 1px 1px 3px rgba(0,0,0,0.5);\n                \"\u003e13\u003c/div\u003e\n            ",
+  "iconSize": [24, 24],
+  "iconAnchor": [12, 12],
+  "className": "empty",
+});
+        
+    
+        var popup_aacb17d7949c27e4fbe684aaba44c6f6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5e06d9585b19fe1e8bed30014f3a10ec = $(`<div id="html_5e06d9585b19fe1e8bed30014f3a10ec" style="width: 100.0%; height: 100.0%;">Tọa độ: 21.038431, 105.785219</div>`)[0];
+                popup_aacb17d7949c27e4fbe684aaba44c6f6.setContent(html_5e06d9585b19fe1e8bed30014f3a10ec);
+            
+        
+
+        marker_87ec83d039d6552b55cdede1cd1bd025.bindPopup(popup_aacb17d7949c27e4fbe684aaba44c6f6)
+        ;
+
+        
+    
+    
+            marker_87ec83d039d6552b55cdede1cd1bd025.bindTooltip(
+                `<div>
+                     Điểm 13
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_87ec83d039d6552b55cdede1cd1bd025.setIcon(div_icon_9a3483474712867328492bfd43a937e1);
+            
+    
+            var marker_7e28b73f565f77ccd16599ac1be4f134 = L.marker(
+                [21.023827, 105.786911],
+                {
+}
+            ).addTo(map_e40cdddcb7c97ce5403984dbbf23f8f6);
+        
+    
+            var div_icon_256ccabad782ac72d706624b5e64b07a = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    background-color: #3498db;\n                    color: white;\n                    border-radius: 50%;\n                    width: 24px;\n                    height: 24px;\n                    display: flex;\n                    justify-content: center;\n                    align-items: center;\n                    font-weight: bold;\n                    font-family: Arial, sans-serif;\n                    font-size: 12px;\n                    border: 2px solid white;\n                    box-shadow: 1px 1px 3px rgba(0,0,0,0.5);\n                \"\u003e14\u003c/div\u003e\n            ",
+  "iconSize": [24, 24],
+  "iconAnchor": [12, 12],
+  "className": "empty",
+});
+        
+    
+        var popup_79f074450cadba67ad666970a2371ebb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4fedbc9f000996344ed767e933df8ca5 = $(`<div id="html_4fedbc9f000996344ed767e933df8ca5" style="width: 100.0%; height: 100.0%;">Tọa độ: 21.023827, 105.786911</div>`)[0];
+                popup_79f074450cadba67ad666970a2371ebb.setContent(html_4fedbc9f000996344ed767e933df8ca5);
+            
+        
+
+        marker_7e28b73f565f77ccd16599ac1be4f134.bindPopup(popup_79f074450cadba67ad666970a2371ebb)
+        ;
+
+        
+    
+    
+            marker_7e28b73f565f77ccd16599ac1be4f134.bindTooltip(
+                `<div>
+                     Điểm 14
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7e28b73f565f77ccd16599ac1be4f134.setIcon(div_icon_256ccabad782ac72d706624b5e64b07a);
+            
+    
+            var marker_9fc3505c917fb6c831f3f3f88b630a4f = L.marker(
+                [21.024538, 105.784522],
+                {
+}
+            ).addTo(map_e40cdddcb7c97ce5403984dbbf23f8f6);
+        
+    
+            var div_icon_02a2c94c445cd31849022e38dffe683a = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    background-color: #3498db;\n                    color: white;\n                    border-radius: 50%;\n                    width: 24px;\n                    height: 24px;\n                    display: flex;\n                    justify-content: center;\n                    align-items: center;\n                    font-weight: bold;\n                    font-family: Arial, sans-serif;\n                    font-size: 12px;\n                    border: 2px solid white;\n                    box-shadow: 1px 1px 3px rgba(0,0,0,0.5);\n                \"\u003e15\u003c/div\u003e\n            ",
+  "iconSize": [24, 24],
+  "iconAnchor": [12, 12],
+  "className": "empty",
+});
+        
+    
+        var popup_1da8c632853548762f5074bb0704aa8c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dceba9bb9d1cbcbfbbc83d0d01d57583 = $(`<div id="html_dceba9bb9d1cbcbfbbc83d0d01d57583" style="width: 100.0%; height: 100.0%;">Tọa độ: 21.024538, 105.784522</div>`)[0];
+                popup_1da8c632853548762f5074bb0704aa8c.setContent(html_dceba9bb9d1cbcbfbbc83d0d01d57583);
+            
+        
+
+        marker_9fc3505c917fb6c831f3f3f88b630a4f.bindPopup(popup_1da8c632853548762f5074bb0704aa8c)
+        ;
+
+        
+    
+    
+            marker_9fc3505c917fb6c831f3f3f88b630a4f.bindTooltip(
+                `<div>
+                     Điểm 15
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9fc3505c917fb6c831f3f3f88b630a4f.setIcon(div_icon_02a2c94c445cd31849022e38dffe683a);
+            
+    
+            var marker_f98567e24d1351632fc6cdda0685bc9c = L.marker(
+                [21.029812, 105.783016],
+                {
+}
+            ).addTo(map_e40cdddcb7c97ce5403984dbbf23f8f6);
+        
+    
+            var div_icon_76bbd6151b32073a753f16b281e1922a = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    background-color: #3498db;\n                    color: white;\n                    border-radius: 50%;\n                    width: 24px;\n                    height: 24px;\n                    display: flex;\n                    justify-content: center;\n                    align-items: center;\n                    font-weight: bold;\n                    font-family: Arial, sans-serif;\n                    font-size: 12px;\n                    border: 2px solid white;\n                    box-shadow: 1px 1px 3px rgba(0,0,0,0.5);\n                \"\u003e16\u003c/div\u003e\n            ",
+  "iconSize": [24, 24],
+  "iconAnchor": [12, 12],
+  "className": "empty",
+});
+        
+    
+        var popup_5e2c2b9c73b8e8f4beb38331131a7b91 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ca229e9fed2d078df620fb7c38188108 = $(`<div id="html_ca229e9fed2d078df620fb7c38188108" style="width: 100.0%; height: 100.0%;">Tọa độ: 21.029812, 105.783016</div>`)[0];
+                popup_5e2c2b9c73b8e8f4beb38331131a7b91.setContent(html_ca229e9fed2d078df620fb7c38188108);
+            
+        
+
+        marker_f98567e24d1351632fc6cdda0685bc9c.bindPopup(popup_5e2c2b9c73b8e8f4beb38331131a7b91)
+        ;
+
+        
+    
+    
+            marker_f98567e24d1351632fc6cdda0685bc9c.bindTooltip(
+                `<div>
+                     Điểm 16
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f98567e24d1351632fc6cdda0685bc9c.setIcon(div_icon_76bbd6151b32073a753f16b281e1922a);
+            
+    
+            var marker_cfc41aea8a0a4828b4cf3ab921553d00 = L.marker(
+                [21.028115, 105.784839],
+                {
+}
+            ).addTo(map_e40cdddcb7c97ce5403984dbbf23f8f6);
+        
+    
+            var div_icon_7f55d110ed18146597191116b9160fcd = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    background-color: #3498db;\n                    color: white;\n                    border-radius: 50%;\n                    width: 24px;\n                    height: 24px;\n                    display: flex;\n                    justify-content: center;\n                    align-items: center;\n                    font-weight: bold;\n                    font-family: Arial, sans-serif;\n                    font-size: 12px;\n                    border: 2px solid white;\n                    box-shadow: 1px 1px 3px rgba(0,0,0,0.5);\n                \"\u003e17\u003c/div\u003e\n            ",
+  "iconSize": [24, 24],
+  "iconAnchor": [12, 12],
+  "className": "empty",
+});
+        
+    
+        var popup_d871db0468877d8385cc2e16c84378a9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1f7116e916c5e2859d534e3df7434176 = $(`<div id="html_1f7116e916c5e2859d534e3df7434176" style="width: 100.0%; height: 100.0%;">Tọa độ: 21.028115, 105.784839</div>`)[0];
+                popup_d871db0468877d8385cc2e16c84378a9.setContent(html_1f7116e916c5e2859d534e3df7434176);
+            
+        
+
+        marker_cfc41aea8a0a4828b4cf3ab921553d00.bindPopup(popup_d871db0468877d8385cc2e16c84378a9)
+        ;
+
+        
+    
+    
+            marker_cfc41aea8a0a4828b4cf3ab921553d00.bindTooltip(
+                `<div>
+                     Điểm 17
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cfc41aea8a0a4828b4cf3ab921553d00.setIcon(div_icon_7f55d110ed18146597191116b9160fcd);
+            
+    
+            var marker_55657dd6929d2490429dd570914ac373 = L.marker(
+                [21.026743, 105.782327],
+                {
+}
+            ).addTo(map_e40cdddcb7c97ce5403984dbbf23f8f6);
+        
+    
+            var div_icon_6ed963c202533a2a3956565da7341c9e = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    background-color: #3498db;\n                    color: white;\n                    border-radius: 50%;\n                    width: 24px;\n                    height: 24px;\n                    display: flex;\n                    justify-content: center;\n                    align-items: center;\n                    font-weight: bold;\n                    font-family: Arial, sans-serif;\n                    font-size: 12px;\n                    border: 2px solid white;\n                    box-shadow: 1px 1px 3px rgba(0,0,0,0.5);\n                \"\u003e18\u003c/div\u003e\n            ",
+  "iconSize": [24, 24],
+  "iconAnchor": [12, 12],
+  "className": "empty",
+});
+        
+    
+        var popup_a0f51b5fb57e090d7055c302206a4d04 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7dc230c7c04d4eb5d069a1d31711b463 = $(`<div id="html_7dc230c7c04d4eb5d069a1d31711b463" style="width: 100.0%; height: 100.0%;">Tọa độ: 21.026743, 105.782327</div>`)[0];
+                popup_a0f51b5fb57e090d7055c302206a4d04.setContent(html_7dc230c7c04d4eb5d069a1d31711b463);
+            
+        
+
+        marker_55657dd6929d2490429dd570914ac373.bindPopup(popup_a0f51b5fb57e090d7055c302206a4d04)
+        ;
+
+        
+    
+    
+            marker_55657dd6929d2490429dd570914ac373.bindTooltip(
+                `<div>
+                     Điểm 18
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_55657dd6929d2490429dd570914ac373.setIcon(div_icon_6ed963c202533a2a3956565da7341c9e);
+            
+    
+            var marker_09232ce07744363a098713bf5ff1321d = L.marker(
+                [21.046833, 105.792814],
+                {
+}
+            ).addTo(map_e40cdddcb7c97ce5403984dbbf23f8f6);
+        
+    
+            var div_icon_641eb8a89bc63fe4a7e1c8882c899b0e = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    background-color: #3498db;\n                    color: white;\n                    border-radius: 50%;\n                    width: 24px;\n                    height: 24px;\n                    display: flex;\n                    justify-content: center;\n                    align-items: center;\n                    font-weight: bold;\n                    font-family: Arial, sans-serif;\n                    font-size: 12px;\n                    border: 2px solid white;\n                    box-shadow: 1px 1px 3px rgba(0,0,0,0.5);\n                \"\u003e19\u003c/div\u003e\n            ",
+  "iconSize": [24, 24],
+  "iconAnchor": [12, 12],
+  "className": "empty",
+});
+        
+    
+        var popup_0a9d3c29af7deb035a50bdbb7d6d5015 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a16cec1ee80383b8fbdff729e25dc9df = $(`<div id="html_a16cec1ee80383b8fbdff729e25dc9df" style="width: 100.0%; height: 100.0%;">Tọa độ: 21.046833, 105.792814</div>`)[0];
+                popup_0a9d3c29af7deb035a50bdbb7d6d5015.setContent(html_a16cec1ee80383b8fbdff729e25dc9df);
+            
+        
+
+        marker_09232ce07744363a098713bf5ff1321d.bindPopup(popup_0a9d3c29af7deb035a50bdbb7d6d5015)
+        ;
+
+        
+    
+    
+            marker_09232ce07744363a098713bf5ff1321d.bindTooltip(
+                `<div>
+                     Điểm 19
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_09232ce07744363a098713bf5ff1321d.setIcon(div_icon_641eb8a89bc63fe4a7e1c8882c899b0e);
+            
+    
+            var marker_7fb575360e89bfac1720536feb5464c7 = L.marker(
+                [21.041908, 105.783622],
+                {
+}
+            ).addTo(map_e40cdddcb7c97ce5403984dbbf23f8f6);
+        
+    
+            var div_icon_9924efd646a5df156ad8615555ad929f = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    background-color: #3498db;\n                    color: white;\n                    border-radius: 50%;\n                    width: 24px;\n                    height: 24px;\n                    display: flex;\n                    justify-content: center;\n                    align-items: center;\n                    font-weight: bold;\n                    font-family: Arial, sans-serif;\n                    font-size: 12px;\n                    border: 2px solid white;\n                    box-shadow: 1px 1px 3px rgba(0,0,0,0.5);\n                \"\u003e20\u003c/div\u003e\n            ",
+  "iconSize": [24, 24],
+  "iconAnchor": [12, 12],
+  "className": "empty",
+});
+        
+    
+        var popup_19c110289a10271ba47267c308dc1315 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7c1f4a353c20745e88d64d2545d6dd7b = $(`<div id="html_7c1f4a353c20745e88d64d2545d6dd7b" style="width: 100.0%; height: 100.0%;">Tọa độ: 21.041908, 105.783622</div>`)[0];
+                popup_19c110289a10271ba47267c308dc1315.setContent(html_7c1f4a353c20745e88d64d2545d6dd7b);
+            
+        
+
+        marker_7fb575360e89bfac1720536feb5464c7.bindPopup(popup_19c110289a10271ba47267c308dc1315)
+        ;
+
+        
+    
+    
+            marker_7fb575360e89bfac1720536feb5464c7.bindTooltip(
+                `<div>
+                     Điểm 20
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7fb575360e89bfac1720536feb5464c7.setIcon(div_icon_9924efd646a5df156ad8615555ad929f);
+            
+    
+            var marker_f3abc5b9f717fd7ea3803749674dc927 = L.marker(
+                [21.025634, 105.792412],
+                {
+}
+            ).addTo(map_e40cdddcb7c97ce5403984dbbf23f8f6);
+        
+    
+            var div_icon_62318ddd8a1992f9c907ecb6a5deddba = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    background-color: #3498db;\n                    color: white;\n                    border-radius: 50%;\n                    width: 24px;\n                    height: 24px;\n                    display: flex;\n                    justify-content: center;\n                    align-items: center;\n                    font-weight: bold;\n                    font-family: Arial, sans-serif;\n                    font-size: 12px;\n                    border: 2px solid white;\n                    box-shadow: 1px 1px 3px rgba(0,0,0,0.5);\n                \"\u003e21\u003c/div\u003e\n            ",
+  "iconSize": [24, 24],
+  "iconAnchor": [12, 12],
+  "className": "empty",
+});
+        
+    
+        var popup_ac65e375ae5191393cc10babd906da6a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f8fe8e1718362bfda13a6ada630fe74d = $(`<div id="html_f8fe8e1718362bfda13a6ada630fe74d" style="width: 100.0%; height: 100.0%;">Tọa độ: 21.025634, 105.792412</div>`)[0];
+                popup_ac65e375ae5191393cc10babd906da6a.setContent(html_f8fe8e1718362bfda13a6ada630fe74d);
+            
+        
+
+        marker_f3abc5b9f717fd7ea3803749674dc927.bindPopup(popup_ac65e375ae5191393cc10babd906da6a)
+        ;
+
+        
+    
+    
+            marker_f3abc5b9f717fd7ea3803749674dc927.bindTooltip(
+                `<div>
+                     Điểm 21
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f3abc5b9f717fd7ea3803749674dc927.setIcon(div_icon_62318ddd8a1992f9c907ecb6a5deddba);
+            
+    
+            var marker_c469caadc4b94055f9bd015fba390270 = L.marker(
+                [21.042118, 105.798925],
+                {
+}
+            ).addTo(map_e40cdddcb7c97ce5403984dbbf23f8f6);
+        
+    
+            var div_icon_a5f5d2a19c2a13892ece3941b39297a7 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    background-color: #3498db;\n                    color: white;\n                    border-radius: 50%;\n                    width: 24px;\n                    height: 24px;\n                    display: flex;\n                    justify-content: center;\n                    align-items: center;\n                    font-weight: bold;\n                    font-family: Arial, sans-serif;\n                    font-size: 12px;\n                    border: 2px solid white;\n                    box-shadow: 1px 1px 3px rgba(0,0,0,0.5);\n                \"\u003e22\u003c/div\u003e\n            ",
+  "iconSize": [24, 24],
+  "iconAnchor": [12, 12],
+  "className": "empty",
+});
+        
+    
+        var popup_16e4b243f80a3b44363b3438c180127c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_da20f3ab774c7d9a25f8f54beeb34784 = $(`<div id="html_da20f3ab774c7d9a25f8f54beeb34784" style="width: 100.0%; height: 100.0%;">Tọa độ: 21.042118, 105.798925</div>`)[0];
+                popup_16e4b243f80a3b44363b3438c180127c.setContent(html_da20f3ab774c7d9a25f8f54beeb34784);
+            
+        
+
+        marker_c469caadc4b94055f9bd015fba390270.bindPopup(popup_16e4b243f80a3b44363b3438c180127c)
+        ;
+
+        
+    
+    
+            marker_c469caadc4b94055f9bd015fba390270.bindTooltip(
+                `<div>
+                     Điểm 22
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c469caadc4b94055f9bd015fba390270.setIcon(div_icon_a5f5d2a19c2a13892ece3941b39297a7);
+            
+    
+            var marker_6260810e06b8b2275458eab94e66db64 = L.marker(
+                [21.040622, 105.798714],
+                {
+}
+            ).addTo(map_e40cdddcb7c97ce5403984dbbf23f8f6);
+        
+    
+            var div_icon_2be43b0fd3d0ce892f3f327cc99ec558 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    background-color: #3498db;\n                    color: white;\n                    border-radius: 50%;\n                    width: 24px;\n                    height: 24px;\n                    display: flex;\n                    justify-content: center;\n                    align-items: center;\n                    font-weight: bold;\n                    font-family: Arial, sans-serif;\n                    font-size: 12px;\n                    border: 2px solid white;\n                    box-shadow: 1px 1px 3px rgba(0,0,0,0.5);\n                \"\u003e23\u003c/div\u003e\n            ",
+  "iconSize": [24, 24],
+  "iconAnchor": [12, 12],
+  "className": "empty",
+});
+        
+    
+        var popup_a471ec8021ae8589a19df98f91eb1037 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e296d5da4487146b2bec7b4408aa8d02 = $(`<div id="html_e296d5da4487146b2bec7b4408aa8d02" style="width: 100.0%; height: 100.0%;">Tọa độ: 21.040622, 105.798714</div>`)[0];
+                popup_a471ec8021ae8589a19df98f91eb1037.setContent(html_e296d5da4487146b2bec7b4408aa8d02);
+            
+        
+
+        marker_6260810e06b8b2275458eab94e66db64.bindPopup(popup_a471ec8021ae8589a19df98f91eb1037)
+        ;
+
+        
+    
+    
+            marker_6260810e06b8b2275458eab94e66db64.bindTooltip(
+                `<div>
+                     Điểm 23
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6260810e06b8b2275458eab94e66db64.setIcon(div_icon_2be43b0fd3d0ce892f3f327cc99ec558);
+            
+    
+            var marker_253a5688ef7456b21a228137963105de = L.marker(
+                [21.042916, 105.795233],
+                {
+}
+            ).addTo(map_e40cdddcb7c97ce5403984dbbf23f8f6);
+        
+    
+            var div_icon_46db7f153a6030f67f45b4df8db3c823 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    background-color: #3498db;\n                    color: white;\n                    border-radius: 50%;\n                    width: 24px;\n                    height: 24px;\n                    display: flex;\n                    justify-content: center;\n                    align-items: center;\n                    font-weight: bold;\n                    font-family: Arial, sans-serif;\n                    font-size: 12px;\n                    border: 2px solid white;\n                    box-shadow: 1px 1px 3px rgba(0,0,0,0.5);\n                \"\u003e24\u003c/div\u003e\n            ",
+  "iconSize": [24, 24],
+  "iconAnchor": [12, 12],
+  "className": "empty",
+});
+        
+    
+        var popup_8e37551d71b716f504cf79af0b7b85cf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9df7baab7aef8e4f560cdcba0919cfff = $(`<div id="html_9df7baab7aef8e4f560cdcba0919cfff" style="width: 100.0%; height: 100.0%;">Tọa độ: 21.042916, 105.795233</div>`)[0];
+                popup_8e37551d71b716f504cf79af0b7b85cf.setContent(html_9df7baab7aef8e4f560cdcba0919cfff);
+            
+        
+
+        marker_253a5688ef7456b21a228137963105de.bindPopup(popup_8e37551d71b716f504cf79af0b7b85cf)
+        ;
+
+        
+    
+    
+            marker_253a5688ef7456b21a228137963105de.bindTooltip(
+                `<div>
+                     Điểm 24
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_253a5688ef7456b21a228137963105de.setIcon(div_icon_46db7f153a6030f67f45b4df8db3c823);
+            
+    
+            var marker_98444cb02d385ef965b24f04b9360af8 = L.marker(
+                [21.044239, 105.791826],
+                {
+}
+            ).addTo(map_e40cdddcb7c97ce5403984dbbf23f8f6);
+        
+    
+            var div_icon_401d397f2814495ca228d2efa8ea0fe4 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    background-color: #3498db;\n                    color: white;\n                    border-radius: 50%;\n                    width: 24px;\n                    height: 24px;\n                    display: flex;\n                    justify-content: center;\n                    align-items: center;\n                    font-weight: bold;\n                    font-family: Arial, sans-serif;\n                    font-size: 12px;\n                    border: 2px solid white;\n                    box-shadow: 1px 1px 3px rgba(0,0,0,0.5);\n                \"\u003e25\u003c/div\u003e\n            ",
+  "iconSize": [24, 24],
+  "iconAnchor": [12, 12],
+  "className": "empty",
+});
+        
+    
+        var popup_07f35320bbd8450be8991abf3dfa0323 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_167fabb2e0483c71f205ea1f8c49df24 = $(`<div id="html_167fabb2e0483c71f205ea1f8c49df24" style="width: 100.0%; height: 100.0%;">Tọa độ: 21.044239, 105.791826</div>`)[0];
+                popup_07f35320bbd8450be8991abf3dfa0323.setContent(html_167fabb2e0483c71f205ea1f8c49df24);
+            
+        
+
+        marker_98444cb02d385ef965b24f04b9360af8.bindPopup(popup_07f35320bbd8450be8991abf3dfa0323)
+        ;
+
+        
+    
+    
+            marker_98444cb02d385ef965b24f04b9360af8.bindTooltip(
+                `<div>
+                     Điểm 25
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_98444cb02d385ef965b24f04b9360af8.setIcon(div_icon_401d397f2814495ca228d2efa8ea0fe4);
+            
+    
+            var marker_78fa1152b1a873bd7b99c13c10c078dc = L.marker(
+                [21.033529, 105.794217],
+                {
+}
+            ).addTo(map_e40cdddcb7c97ce5403984dbbf23f8f6);
+        
+    
+            var div_icon_3578c843dfa50549c3e444ab5d1ccb89 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    background-color: #3498db;\n                    color: white;\n                    border-radius: 50%;\n                    width: 24px;\n                    height: 24px;\n                    display: flex;\n                    justify-content: center;\n                    align-items: center;\n                    font-weight: bold;\n                    font-family: Arial, sans-serif;\n                    font-size: 12px;\n                    border: 2px solid white;\n                    box-shadow: 1px 1px 3px rgba(0,0,0,0.5);\n                \"\u003e26\u003c/div\u003e\n            ",
+  "iconSize": [24, 24],
+  "iconAnchor": [12, 12],
+  "className": "empty",
+});
+        
+    
+        var popup_66b874d4bd17f2e67d2981114ad632b1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_965e54b7fd75c3fbb23a2e99fc18c540 = $(`<div id="html_965e54b7fd75c3fbb23a2e99fc18c540" style="width: 100.0%; height: 100.0%;">Tọa độ: 21.033529, 105.794217</div>`)[0];
+                popup_66b874d4bd17f2e67d2981114ad632b1.setContent(html_965e54b7fd75c3fbb23a2e99fc18c540);
+            
+        
+
+        marker_78fa1152b1a873bd7b99c13c10c078dc.bindPopup(popup_66b874d4bd17f2e67d2981114ad632b1)
+        ;
+
+        
+    
+    
+            marker_78fa1152b1a873bd7b99c13c10c078dc.bindTooltip(
+                `<div>
+                     Điểm 26
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_78fa1152b1a873bd7b99c13c10c078dc.setIcon(div_icon_3578c843dfa50549c3e444ab5d1ccb89);
+            
+    
+            var marker_416cf4546d605219667db76e4683b6a0 = L.marker(
+                [21.035721, 105.794635],
+                {
+}
+            ).addTo(map_e40cdddcb7c97ce5403984dbbf23f8f6);
+        
+    
+            var div_icon_fde4146061931656cbe6789610c4cf75 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    background-color: #3498db;\n                    color: white;\n                    border-radius: 50%;\n                    width: 24px;\n                    height: 24px;\n                    display: flex;\n                    justify-content: center;\n                    align-items: center;\n                    font-weight: bold;\n                    font-family: Arial, sans-serif;\n                    font-size: 12px;\n                    border: 2px solid white;\n                    box-shadow: 1px 1px 3px rgba(0,0,0,0.5);\n                \"\u003e27\u003c/div\u003e\n            ",
+  "iconSize": [24, 24],
+  "iconAnchor": [12, 12],
+  "className": "empty",
+});
+        
+    
+        var popup_2ab6fb707a4c4a0044e7abb2d04603dc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_be90478c3027c1bdbf555d8ab0dc37a5 = $(`<div id="html_be90478c3027c1bdbf555d8ab0dc37a5" style="width: 100.0%; height: 100.0%;">Tọa độ: 21.035721, 105.794635</div>`)[0];
+                popup_2ab6fb707a4c4a0044e7abb2d04603dc.setContent(html_be90478c3027c1bdbf555d8ab0dc37a5);
+            
+        
+
+        marker_416cf4546d605219667db76e4683b6a0.bindPopup(popup_2ab6fb707a4c4a0044e7abb2d04603dc)
+        ;
+
+        
+    
+    
+            marker_416cf4546d605219667db76e4683b6a0.bindTooltip(
+                `<div>
+                     Điểm 27
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_416cf4546d605219667db76e4683b6a0.setIcon(div_icon_fde4146061931656cbe6789610c4cf75);
+            
+    
+            var marker_0dccb380d2aefff3300a2fd6a4f73119 = L.marker(
+                [21.033845, 105.796811],
+                {
+}
+            ).addTo(map_e40cdddcb7c97ce5403984dbbf23f8f6);
+        
+    
+            var div_icon_7fedca5b200500494ff1d1ad08cc3c08 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    background-color: #3498db;\n                    color: white;\n                    border-radius: 50%;\n                    width: 24px;\n                    height: 24px;\n                    display: flex;\n                    justify-content: center;\n                    align-items: center;\n                    font-weight: bold;\n                    font-family: Arial, sans-serif;\n                    font-size: 12px;\n                    border: 2px solid white;\n                    box-shadow: 1px 1px 3px rgba(0,0,0,0.5);\n                \"\u003e28\u003c/div\u003e\n            ",
+  "iconSize": [24, 24],
+  "iconAnchor": [12, 12],
+  "className": "empty",
+});
+        
+    
+        var popup_4b561df846504945e5de0f464a055c45 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2988898528313104eafb63300f7e7c3b = $(`<div id="html_2988898528313104eafb63300f7e7c3b" style="width: 100.0%; height: 100.0%;">Tọa độ: 21.033845, 105.796811</div>`)[0];
+                popup_4b561df846504945e5de0f464a055c45.setContent(html_2988898528313104eafb63300f7e7c3b);
+            
+        
+
+        marker_0dccb380d2aefff3300a2fd6a4f73119.bindPopup(popup_4b561df846504945e5de0f464a055c45)
+        ;
+
+        
+    
+    
+            marker_0dccb380d2aefff3300a2fd6a4f73119.bindTooltip(
+                `<div>
+                     Điểm 28
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0dccb380d2aefff3300a2fd6a4f73119.setIcon(div_icon_7fedca5b200500494ff1d1ad08cc3c08);
+            
+    
+            var marker_63383699f09cd686e622dc95391b5fa1 = L.marker(
+                [21.036619, 105.782142],
+                {
+}
+            ).addTo(map_e40cdddcb7c97ce5403984dbbf23f8f6);
+        
+    
+            var div_icon_1ff37b6666f1dac31aea2631d84518f7 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    background-color: #3498db;\n                    color: white;\n                    border-radius: 50%;\n                    width: 24px;\n                    height: 24px;\n                    display: flex;\n                    justify-content: center;\n                    align-items: center;\n                    font-weight: bold;\n                    font-family: Arial, sans-serif;\n                    font-size: 12px;\n                    border: 2px solid white;\n                    box-shadow: 1px 1px 3px rgba(0,0,0,0.5);\n                \"\u003e29\u003c/div\u003e\n            ",
+  "iconSize": [24, 24],
+  "iconAnchor": [12, 12],
+  "className": "empty",
+});
+        
+    
+        var popup_301ebc83d95ff11801c9be5bf7e86c16 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_70c8b48974a2bf6dec5efdc78c051cae = $(`<div id="html_70c8b48974a2bf6dec5efdc78c051cae" style="width: 100.0%; height: 100.0%;">Tọa độ: 21.036619, 105.782142</div>`)[0];
+                popup_301ebc83d95ff11801c9be5bf7e86c16.setContent(html_70c8b48974a2bf6dec5efdc78c051cae);
+            
+        
+
+        marker_63383699f09cd686e622dc95391b5fa1.bindPopup(popup_301ebc83d95ff11801c9be5bf7e86c16)
+        ;
+
+        
+    
+    
+            marker_63383699f09cd686e622dc95391b5fa1.bindTooltip(
+                `<div>
+                     Điểm 29
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_63383699f09cd686e622dc95391b5fa1.setIcon(div_icon_1ff37b6666f1dac31aea2631d84518f7);
+            
+    
+            var marker_3b99df2aeaf539f7b1bab08ea741fad5 = L.marker(
+                [21.030925, 105.782936],
+                {
+}
+            ).addTo(map_e40cdddcb7c97ce5403984dbbf23f8f6);
+        
+    
+            var div_icon_6f9741fe4596ee7c9b0a6684de8a2b00 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    background-color: #3498db;\n                    color: white;\n                    border-radius: 50%;\n                    width: 24px;\n                    height: 24px;\n                    display: flex;\n                    justify-content: center;\n                    align-items: center;\n                    font-weight: bold;\n                    font-family: Arial, sans-serif;\n                    font-size: 12px;\n                    border: 2px solid white;\n                    box-shadow: 1px 1px 3px rgba(0,0,0,0.5);\n                \"\u003e30\u003c/div\u003e\n            ",
+  "iconSize": [24, 24],
+  "iconAnchor": [12, 12],
+  "className": "empty",
+});
+        
+    
+        var popup_f9e131fd959b6107518065ef36e4e081 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_20aafc8ac9497eeefac7d98758808318 = $(`<div id="html_20aafc8ac9497eeefac7d98758808318" style="width: 100.0%; height: 100.0%;">Tọa độ: 21.030925, 105.782936</div>`)[0];
+                popup_f9e131fd959b6107518065ef36e4e081.setContent(html_20aafc8ac9497eeefac7d98758808318);
+            
+        
+
+        marker_3b99df2aeaf539f7b1bab08ea741fad5.bindPopup(popup_f9e131fd959b6107518065ef36e4e081)
+        ;
+
+        
+    
+    
+            marker_3b99df2aeaf539f7b1bab08ea741fad5.bindTooltip(
+                `<div>
+                     Điểm 30
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3b99df2aeaf539f7b1bab08ea741fad5.setIcon(div_icon_6f9741fe4596ee7c9b0a6684de8a2b00);
+            
+    
+            var marker_6a705d35c7897d1ebd60f6d6139c3d96 = L.marker(
+                [21.025109, 105.786514],
+                {
+}
+            ).addTo(map_e40cdddcb7c97ce5403984dbbf23f8f6);
+        
+    
+            var div_icon_a864a81704b7fb90a04731c9d91bf57d = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    background-color: #3498db;\n                    color: white;\n                    border-radius: 50%;\n                    width: 24px;\n                    height: 24px;\n                    display: flex;\n                    justify-content: center;\n                    align-items: center;\n                    font-weight: bold;\n                    font-family: Arial, sans-serif;\n                    font-size: 12px;\n                    border: 2px solid white;\n                    box-shadow: 1px 1px 3px rgba(0,0,0,0.5);\n                \"\u003e31\u003c/div\u003e\n            ",
+  "iconSize": [24, 24],
+  "iconAnchor": [12, 12],
+  "className": "empty",
+});
+        
+    
+        var popup_76453ffb280047ac88aefe951a47a13d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4dca5771ad60fb0d7392227a8e4de625 = $(`<div id="html_4dca5771ad60fb0d7392227a8e4de625" style="width: 100.0%; height: 100.0%;">Tọa độ: 21.025109, 105.786514</div>`)[0];
+                popup_76453ffb280047ac88aefe951a47a13d.setContent(html_4dca5771ad60fb0d7392227a8e4de625);
+            
+        
+
+        marker_6a705d35c7897d1ebd60f6d6139c3d96.bindPopup(popup_76453ffb280047ac88aefe951a47a13d)
+        ;
+
+        
+    
+    
+            marker_6a705d35c7897d1ebd60f6d6139c3d96.bindTooltip(
+                `<div>
+                     Điểm 31
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6a705d35c7897d1ebd60f6d6139c3d96.setIcon(div_icon_a864a81704b7fb90a04731c9d91bf57d);
+            
+    
+            var marker_688d32af2365d35935f8079a4cd3abf1 = L.marker(
+                [21.017216, 105.781824],
+                {
+}
+            ).addTo(map_e40cdddcb7c97ce5403984dbbf23f8f6);
+        
+    
+            var div_icon_f765f997975503819c8fc0015c171094 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    background-color: #3498db;\n                    color: white;\n                    border-radius: 50%;\n                    width: 24px;\n                    height: 24px;\n                    display: flex;\n                    justify-content: center;\n                    align-items: center;\n                    font-weight: bold;\n                    font-family: Arial, sans-serif;\n                    font-size: 12px;\n                    border: 2px solid white;\n                    box-shadow: 1px 1px 3px rgba(0,0,0,0.5);\n                \"\u003e32\u003c/div\u003e\n            ",
+  "iconSize": [24, 24],
+  "iconAnchor": [12, 12],
+  "className": "empty",
+});
+        
+    
+        var popup_2a0a3eaf06bae9f2ba23fa6785777021 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4af1200d3f35e529012472fab8650fae = $(`<div id="html_4af1200d3f35e529012472fab8650fae" style="width: 100.0%; height: 100.0%;">Tọa độ: 21.017216, 105.781824</div>`)[0];
+                popup_2a0a3eaf06bae9f2ba23fa6785777021.setContent(html_4af1200d3f35e529012472fab8650fae);
+            
+        
+
+        marker_688d32af2365d35935f8079a4cd3abf1.bindPopup(popup_2a0a3eaf06bae9f2ba23fa6785777021)
+        ;
+
+        
+    
+    
+            marker_688d32af2365d35935f8079a4cd3abf1.bindTooltip(
+                `<div>
+                     Điểm 32
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_688d32af2365d35935f8079a4cd3abf1.setIcon(div_icon_f765f997975503819c8fc0015c171094);
+            
+    
+            var marker_8b4995118458f4e0d556ba5f79073167 = L.marker(
+                [21.015208, 105.792541],
+                {
+}
+            ).addTo(map_e40cdddcb7c97ce5403984dbbf23f8f6);
+        
+    
+            var div_icon_6d73d7c33de1ba80f12e6727a488ca99 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    background-color: #3498db;\n                    color: white;\n                    border-radius: 50%;\n                    width: 24px;\n                    height: 24px;\n                    display: flex;\n                    justify-content: center;\n                    align-items: center;\n                    font-weight: bold;\n                    font-family: Arial, sans-serif;\n                    font-size: 12px;\n                    border: 2px solid white;\n                    box-shadow: 1px 1px 3px rgba(0,0,0,0.5);\n                \"\u003e33\u003c/div\u003e\n            ",
+  "iconSize": [24, 24],
+  "iconAnchor": [12, 12],
+  "className": "empty",
+});
+        
+    
+        var popup_9a591df132e11f5972bcbc9150affe5d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cf6bb5fa2d60da817925dc954fe3bd1c = $(`<div id="html_cf6bb5fa2d60da817925dc954fe3bd1c" style="width: 100.0%; height: 100.0%;">Tọa độ: 21.015208, 105.792541</div>`)[0];
+                popup_9a591df132e11f5972bcbc9150affe5d.setContent(html_cf6bb5fa2d60da817925dc954fe3bd1c);
+            
+        
+
+        marker_8b4995118458f4e0d556ba5f79073167.bindPopup(popup_9a591df132e11f5972bcbc9150affe5d)
+        ;
+
+        
+    
+    
+            marker_8b4995118458f4e0d556ba5f79073167.bindTooltip(
+                `<div>
+                     Điểm 33
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8b4995118458f4e0d556ba5f79073167.setIcon(div_icon_6d73d7c33de1ba80f12e6727a488ca99);
+            
+    
+            var marker_5bce08fa11a2b48055a36c323a63a0bd = L.marker(
+                [21.015528, 105.800512],
+                {
+}
+            ).addTo(map_e40cdddcb7c97ce5403984dbbf23f8f6);
+        
+    
+            var div_icon_27ad7df61647b18cf5ad833fdc33c9ea = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    background-color: #3498db;\n                    color: white;\n                    border-radius: 50%;\n                    width: 24px;\n                    height: 24px;\n                    display: flex;\n                    justify-content: center;\n                    align-items: center;\n                    font-weight: bold;\n                    font-family: Arial, sans-serif;\n                    font-size: 12px;\n                    border: 2px solid white;\n                    box-shadow: 1px 1px 3px rgba(0,0,0,0.5);\n                \"\u003e34\u003c/div\u003e\n            ",
+  "iconSize": [24, 24],
+  "iconAnchor": [12, 12],
+  "className": "empty",
+});
+        
+    
+        var popup_b8cf19b34f63a134e86bec15b663dae2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_06cd7ae5545ee36930b70b7b68c1bc81 = $(`<div id="html_06cd7ae5545ee36930b70b7b68c1bc81" style="width: 100.0%; height: 100.0%;">Tọa độ: 21.015528, 105.800512</div>`)[0];
+                popup_b8cf19b34f63a134e86bec15b663dae2.setContent(html_06cd7ae5545ee36930b70b7b68c1bc81);
+            
+        
+
+        marker_5bce08fa11a2b48055a36c323a63a0bd.bindPopup(popup_b8cf19b34f63a134e86bec15b663dae2)
+        ;
+
+        
+    
+    
+            marker_5bce08fa11a2b48055a36c323a63a0bd.bindTooltip(
+                `<div>
+                     Điểm 34
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5bce08fa11a2b48055a36c323a63a0bd.setIcon(div_icon_27ad7df61647b18cf5ad833fdc33c9ea);
+            
+    
+            var marker_356e7a388cb2e0cf3851fe5821f50ce3 = L.marker(
+                [21.021804, 105.798215],
+                {
+}
+            ).addTo(map_e40cdddcb7c97ce5403984dbbf23f8f6);
+        
+    
+            var div_icon_a3d7c54a82770935dd8337e71e44797c = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    background-color: #3498db;\n                    color: white;\n                    border-radius: 50%;\n                    width: 24px;\n                    height: 24px;\n                    display: flex;\n                    justify-content: center;\n                    align-items: center;\n                    font-weight: bold;\n                    font-family: Arial, sans-serif;\n                    font-size: 12px;\n                    border: 2px solid white;\n                    box-shadow: 1px 1px 3px rgba(0,0,0,0.5);\n                \"\u003e35\u003c/div\u003e\n            ",
+  "iconSize": [24, 24],
+  "iconAnchor": [12, 12],
+  "className": "empty",
+});
+        
+    
+        var popup_2aacc3fb47fd3bdd4c29b06beddcdbb0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4805f872714f04688d2c38b187376675 = $(`<div id="html_4805f872714f04688d2c38b187376675" style="width: 100.0%; height: 100.0%;">Tọa độ: 21.021804, 105.798215</div>`)[0];
+                popup_2aacc3fb47fd3bdd4c29b06beddcdbb0.setContent(html_4805f872714f04688d2c38b187376675);
+            
+        
+
+        marker_356e7a388cb2e0cf3851fe5821f50ce3.bindPopup(popup_2aacc3fb47fd3bdd4c29b06beddcdbb0)
+        ;
+
+        
+    
+    
+            marker_356e7a388cb2e0cf3851fe5821f50ce3.bindTooltip(
+                `<div>
+                     Điểm 35
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_356e7a388cb2e0cf3851fe5821f50ce3.setIcon(div_icon_a3d7c54a82770935dd8337e71e44797c);
+            
+    
+            var marker_1b14ef9893f9eba7bdc9bea93009902b = L.marker(
+                [21.009124, 105.796631],
+                {
+}
+            ).addTo(map_e40cdddcb7c97ce5403984dbbf23f8f6);
+        
+    
+            var div_icon_1ddd29c3dd639b14d01cab535d7ee59b = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    background-color: #3498db;\n                    color: white;\n                    border-radius: 50%;\n                    width: 24px;\n                    height: 24px;\n                    display: flex;\n                    justify-content: center;\n                    align-items: center;\n                    font-weight: bold;\n                    font-family: Arial, sans-serif;\n                    font-size: 12px;\n                    border: 2px solid white;\n                    box-shadow: 1px 1px 3px rgba(0,0,0,0.5);\n                \"\u003e36\u003c/div\u003e\n            ",
+  "iconSize": [24, 24],
+  "iconAnchor": [12, 12],
+  "className": "empty",
+});
+        
+    
+        var popup_4a90770a1a4d3c74e488820d75bd155e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ee3e91c93e0947a6595387f633f221df = $(`<div id="html_ee3e91c93e0947a6595387f633f221df" style="width: 100.0%; height: 100.0%;">Tọa độ: 21.009124, 105.796631</div>`)[0];
+                popup_4a90770a1a4d3c74e488820d75bd155e.setContent(html_ee3e91c93e0947a6595387f633f221df);
+            
+        
+
+        marker_1b14ef9893f9eba7bdc9bea93009902b.bindPopup(popup_4a90770a1a4d3c74e488820d75bd155e)
+        ;
+
+        
+    
+    
+            marker_1b14ef9893f9eba7bdc9bea93009902b.bindTooltip(
+                `<div>
+                     Điểm 36
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1b14ef9893f9eba7bdc9bea93009902b.setIcon(div_icon_1ddd29c3dd639b14d01cab535d7ee59b);
+            
+    
+            var marker_905fd7da0c8944073668ad122d80a351 = L.marker(
+                [21.033519, 105.778842],
+                {
+}
+            ).addTo(map_e40cdddcb7c97ce5403984dbbf23f8f6);
+        
+    
+            var div_icon_9a2f720cb9b34c6a8bcd9d561e40e85d = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    background-color: #3498db;\n                    color: white;\n                    border-radius: 50%;\n                    width: 24px;\n                    height: 24px;\n                    display: flex;\n                    justify-content: center;\n                    align-items: center;\n                    font-weight: bold;\n                    font-family: Arial, sans-serif;\n                    font-size: 12px;\n                    border: 2px solid white;\n                    box-shadow: 1px 1px 3px rgba(0,0,0,0.5);\n                \"\u003e37\u003c/div\u003e\n            ",
+  "iconSize": [24, 24],
+  "iconAnchor": [12, 12],
+  "className": "empty",
+});
+        
+    
+        var popup_7f11f71740ce8a0b6d389cd1d3d1b636 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b5fa7b01d6ce282997503da1ed6727aa = $(`<div id="html_b5fa7b01d6ce282997503da1ed6727aa" style="width: 100.0%; height: 100.0%;">Tọa độ: 21.033519, 105.778842</div>`)[0];
+                popup_7f11f71740ce8a0b6d389cd1d3d1b636.setContent(html_b5fa7b01d6ce282997503da1ed6727aa);
+            
+        
+
+        marker_905fd7da0c8944073668ad122d80a351.bindPopup(popup_7f11f71740ce8a0b6d389cd1d3d1b636)
+        ;
+
+        
+    
+    
+            marker_905fd7da0c8944073668ad122d80a351.bindTooltip(
+                `<div>
+                     Điểm 37
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_905fd7da0c8944073668ad122d80a351.setIcon(div_icon_9a2f720cb9b34c6a8bcd9d561e40e85d);
+            
+    
+            var marker_0fb0747aa9e57f893972a1b437600769 = L.marker(
+                [21.039826, 105.782511],
+                {
+}
+            ).addTo(map_e40cdddcb7c97ce5403984dbbf23f8f6);
+        
+    
+            var div_icon_9b3c8c0ce1db605ab3f227001e779cf9 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    background-color: #3498db;\n                    color: white;\n                    border-radius: 50%;\n                    width: 24px;\n                    height: 24px;\n                    display: flex;\n                    justify-content: center;\n                    align-items: center;\n                    font-weight: bold;\n                    font-family: Arial, sans-serif;\n                    font-size: 12px;\n                    border: 2px solid white;\n                    box-shadow: 1px 1px 3px rgba(0,0,0,0.5);\n                \"\u003e38\u003c/div\u003e\n            ",
+  "iconSize": [24, 24],
+  "iconAnchor": [12, 12],
+  "className": "empty",
+});
+        
+    
+        var popup_2eda80efb2e6560f444737cfb1a9b8e2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_136fa33280657072bccade5202859c9c = $(`<div id="html_136fa33280657072bccade5202859c9c" style="width: 100.0%; height: 100.0%;">Tọa độ: 21.039826, 105.782511</div>`)[0];
+                popup_2eda80efb2e6560f444737cfb1a9b8e2.setContent(html_136fa33280657072bccade5202859c9c);
+            
+        
+
+        marker_0fb0747aa9e57f893972a1b437600769.bindPopup(popup_2eda80efb2e6560f444737cfb1a9b8e2)
+        ;
+
+        
+    
+    
+            marker_0fb0747aa9e57f893972a1b437600769.bindTooltip(
+                `<div>
+                     Điểm 38
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0fb0747aa9e57f893972a1b437600769.setIcon(div_icon_9b3c8c0ce1db605ab3f227001e779cf9);
+            
+    
+            var marker_8b5d1f75a39d6fc806d92c99f89d4786 = L.marker(
+                [21.040211, 105.776533],
+                {
+}
+            ).addTo(map_e40cdddcb7c97ce5403984dbbf23f8f6);
+        
+    
+            var div_icon_e1e8006883e202f0f2de5c892f12c772 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    background-color: #3498db;\n                    color: white;\n                    border-radius: 50%;\n                    width: 24px;\n                    height: 24px;\n                    display: flex;\n                    justify-content: center;\n                    align-items: center;\n                    font-weight: bold;\n                    font-family: Arial, sans-serif;\n                    font-size: 12px;\n                    border: 2px solid white;\n                    box-shadow: 1px 1px 3px rgba(0,0,0,0.5);\n                \"\u003e39\u003c/div\u003e\n            ",
+  "iconSize": [24, 24],
+  "iconAnchor": [12, 12],
+  "className": "empty",
+});
+        
+    
+        var popup_5c6be39ae1bb7d9d75b39f038e2c46e8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_280a2629d13365b1f70ab21464e752b8 = $(`<div id="html_280a2629d13365b1f70ab21464e752b8" style="width: 100.0%; height: 100.0%;">Tọa độ: 21.040211, 105.776533</div>`)[0];
+                popup_5c6be39ae1bb7d9d75b39f038e2c46e8.setContent(html_280a2629d13365b1f70ab21464e752b8);
+            
+        
+
+        marker_8b5d1f75a39d6fc806d92c99f89d4786.bindPopup(popup_5c6be39ae1bb7d9d75b39f038e2c46e8)
+        ;
+
+        
+    
+    
+            marker_8b5d1f75a39d6fc806d92c99f89d4786.bindTooltip(
+                `<div>
+                     Điểm 39
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8b5d1f75a39d6fc806d92c99f89d4786.setIcon(div_icon_e1e8006883e202f0f2de5c892f12c772);
+            
+    
+            var marker_1399af193c5f002dbfb4aed4363390f8 = L.marker(
+                [21.006822, 105.788534],
+                {
+}
+            ).addTo(map_e40cdddcb7c97ce5403984dbbf23f8f6);
+        
+    
+            var div_icon_87962ba54ab2975bb248db13ccb2b551 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    background-color: #3498db;\n                    color: white;\n                    border-radius: 50%;\n                    width: 24px;\n                    height: 24px;\n                    display: flex;\n                    justify-content: center;\n                    align-items: center;\n                    font-weight: bold;\n                    font-family: Arial, sans-serif;\n                    font-size: 12px;\n                    border: 2px solid white;\n                    box-shadow: 1px 1px 3px rgba(0,0,0,0.5);\n                \"\u003e40\u003c/div\u003e\n            ",
+  "iconSize": [24, 24],
+  "iconAnchor": [12, 12],
+  "className": "empty",
+});
+        
+    
+        var popup_6cd5e2378ae5055fd95dc2ed3ecf67f0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_23178269bfdd36e31279afcc3622706c = $(`<div id="html_23178269bfdd36e31279afcc3622706c" style="width: 100.0%; height: 100.0%;">Tọa độ: 21.006822, 105.788534</div>`)[0];
+                popup_6cd5e2378ae5055fd95dc2ed3ecf67f0.setContent(html_23178269bfdd36e31279afcc3622706c);
+            
+        
+
+        marker_1399af193c5f002dbfb4aed4363390f8.bindPopup(popup_6cd5e2378ae5055fd95dc2ed3ecf67f0)
+        ;
+
+        
+    
+    
+            marker_1399af193c5f002dbfb4aed4363390f8.bindTooltip(
+                `<div>
+                     Điểm 40
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1399af193c5f002dbfb4aed4363390f8.setIcon(div_icon_87962ba54ab2975bb248db13ccb2b551);
+            
+    
+            var poly_line_e8481664267ed3d1e1b7cb25a6901693 = L.polyline(
+                [[21.051924, 105.790528], [21.051924, 105.790357], [21.051891, 105.79025], [21.051891, 105.790112], [21.051891, 105.789966], [21.051809, 105.789968], [21.051808, 105.790113], [21.051807, 105.790782], [21.051804, 105.792135], [21.051809, 105.792641], [21.051742, 105.792642], [21.05105, 105.792617], [21.050401, 105.79308], [21.0502, 105.793229], [21.049615, 105.793663], [21.049506, 105.793744], [21.049237, 105.793944], [21.048819, 105.794255], [21.048689, 105.794352], [21.048339, 105.794648], [21.048265, 105.794647], [21.047936, 105.794643], [21.047591, 105.794639], [21.047324, 105.794635], [21.047193, 105.794634], [21.047167, 105.794635], [21.047065, 105.794632], [21.046883, 105.79463], [21.046887, 105.793775], [21.046889, 105.793361], [21.046892, 105.792814], [21.046893, 105.792659], [21.046894, 105.792431], [21.046351, 105.792437], [21.046263, 105.792438], [21.046257, 105.791801], [21.046259, 105.791591], [21.046255, 105.791227], [21.046246, 105.790388], [21.046245, 105.790289], [21.046078, 105.790289], [21.046079, 105.79039], [21.04608, 105.790595], [21.04608, 105.790666], [21.046082, 105.791359], [21.046084, 105.791626], [21.046084, 105.791834], [21.046086, 105.79266], [21.046021, 105.79266], [21.045944, 105.792661], [21.045629, 105.792663], [21.04532, 105.792666], [21.045264, 105.792666], [21.045056, 105.792668], [21.044735, 105.79267], [21.044684, 105.79267], [21.044479, 105.792672], [21.044186, 105.792674], [21.044192, 105.791826], [21.044193, 105.79171], [21.044137, 105.791713], [21.043457, 105.791742], [21.043243, 105.791749], [21.043099, 105.791751], [21.042923, 105.791753], [21.042852, 105.791757], [21.042718, 105.791757], [21.042602, 105.791765], [21.042521, 105.791768], [21.042261, 105.791773], [21.042038, 105.791779], [21.042007, 105.791781], [21.041681, 105.791785], [21.041637, 105.791786], [21.041638, 105.791634], [21.041639, 105.790836], [21.041641, 105.790622], [21.041637, 105.790403], [21.041638, 105.790221], [21.041638, 105.789648], [21.041638, 105.789585], [21.041639, 105.788985], [21.041639, 105.788858], [21.04164, 105.788552], [21.04164, 105.788355], [21.04164, 105.788287], [21.041647, 105.787763], [21.041641, 105.787558], [21.041643, 105.787153], [21.04164, 105.78713], [21.041643, 105.786736], [21.041642, 105.786595], [21.041642, 105.786371], [21.041653, 105.786177], [21.041658, 105.785995], [21.041674, 105.785597], [21.041676, 105.78554], [21.041707, 105.784811], [21.041723, 105.78443], [21.041725, 105.78437], [21.041728, 105.784285], [21.04173, 105.784038], [21.041742, 105.783617], [21.041742, 105.783609], [21.041757, 105.783043], [21.04177, 105.78271], [21.041778, 105.782518], [21.041795, 105.782112], [21.041808, 105.781726], [21.041835, 105.78126], [21.041841, 105.781136], [21.042671, 105.781185], [21.042865, 105.781197], [21.043057, 105.78121], [21.043074, 105.781211], [21.04314, 105.781215], [21.043159, 105.780876], [21.042471, 105.780834], [21.042211, 105.780816], [21.041878, 105.780797], [21.040885, 105.780736], [21.040825, 105.780732], [21.040592, 105.780718], [21.040553, 105.780716], [21.040504, 105.780713], [21.040322, 105.780703], [21.040205, 105.780696], [21.040135, 105.780692], [21.03998, 105.780677], [21.039761, 105.78066], [21.039446, 105.780636], [21.039297, 105.780586], [21.039157, 105.780578], [21.039071, 105.780605], [21.038229, 105.780549], [21.038198, 105.780544], [21.038041, 105.780514], [21.037931, 105.780481], [21.037722, 105.780456], [21.037547, 105.780441], [21.037473, 105.780525], [21.037446, 105.780555], [21.037418, 105.780604], [21.037401, 105.780683], [21.037406, 105.780777], [21.037421, 105.780827], [21.037444, 105.780861], [21.037524, 105.780938], [21.038418, 105.780996], [21.039044, 105.781038], [21.039137, 105.781044], [21.039433, 105.781021], [21.039651, 105.781033], [21.039646, 105.781168], [21.039645, 105.781222], [21.039644, 105.781307], [21.039643, 105.781445], [21.039641, 105.781697], [21.039612, 105.781747], [21.039612, 105.781779], [21.039611, 105.781799], [21.039592, 105.782648], [21.039643, 105.78265], [21.040125, 105.782662], [21.04021, 105.782664], [21.040227, 105.782664], [21.040247, 105.782665], [21.040248, 105.782599], [21.04025, 105.782541], [21.040236, 105.782528], [21.040213, 105.78254], [21.040211, 105.782599], [21.04021, 105.782664], [21.040125, 105.782662], [21.039823, 105.782654], [21.039643, 105.78265], [21.039664, 105.781875], [21.039668, 105.781746], [21.039641, 105.781697], [21.039643, 105.781445], [21.039644, 105.781307], [21.039645, 105.781222], [21.039646, 105.781168], [21.039651, 105.781033], [21.04011, 105.781041], [21.040297, 105.781057], [21.040981, 105.781102], [21.041115, 105.781109], [21.041359, 105.781119], [21.041609, 105.781127], [21.041841, 105.781136], [21.042671, 105.781185], [21.042865, 105.781197], [21.043057, 105.78121], [21.043074, 105.781211], [21.04314, 105.781215], [21.043159, 105.780876], [21.042471, 105.780834], [21.042211, 105.780816], [21.041878, 105.780797], [21.040885, 105.780736], [21.040894, 105.780639], [21.040898, 105.780605], [21.0409, 105.780571], [21.04092, 105.780282], [21.040953, 105.77984], [21.04097, 105.77962], [21.040983, 105.779449], [21.041034, 105.779067], [21.041224, 105.778442], [21.041303, 105.77818], [21.041362, 105.777987], [21.041459, 105.777668], [21.041524, 105.777463], [21.041468, 105.777131], [21.041582, 105.776744], [21.041338, 105.776665], [21.041275, 105.776643], [21.041045, 105.776567], [21.040664, 105.776424], [21.040181, 105.776246], [21.040121, 105.776225], [21.040041, 105.77647], [21.040003, 105.776588], [21.039977, 105.776658], [21.039713, 105.776555], [21.039977, 105.776658], [21.040003, 105.776588], [21.040121, 105.776225], [21.0394, 105.775979], [21.039332, 105.775958], [21.039016, 105.775838], [21.03843, 105.775609], [21.038307, 105.77556], [21.038005, 105.775476], [21.037845, 105.77542], [21.037824, 105.775346], [21.03782, 105.77528], [21.037829, 105.775197], [21.037872, 105.775025], [21.037766, 105.774988], [21.037714, 105.774971], [21.03769, 105.774964], [21.037656, 105.774951], [21.037599, 105.774931], [21.037632, 105.774824], [21.037789, 105.774324], [21.037818, 105.774229], [21.037948, 105.773763], [21.038007, 105.773522], [21.038072, 105.773268], [21.038129, 105.773046], [21.038194, 105.77279], [21.038222, 105.772676], [21.038305, 105.772322], [21.038308, 105.77231], [21.038336, 105.772191], [21.038376, 105.77202], [21.038222, 105.771955], [21.038179, 105.772124], [21.038142, 105.772248], [21.038138, 105.772263], [21.038092, 105.772454], [21.038064, 105.772559], [21.038004, 105.772799], [21.037897, 105.773218], [21.037854, 105.773401], [21.037801, 105.773617], [21.037754, 105.773799], [21.037704, 105.773987], [21.03768, 105.77407], [21.03762, 105.774258], [21.037463, 105.774761], [21.037407, 105.77493], [21.037333, 105.774901], [21.037309, 105.774892], [21.037293, 105.774886], [21.03718, 105.77485], [21.037121, 105.775024], [21.03696, 105.774967], [21.036901, 105.774947], [21.036608, 105.774845], [21.036724, 105.774474], [21.037237, 105.774658], [21.03718, 105.77485], [21.037293, 105.774886], [21.037309, 105.774892], [21.037333, 105.774901], [21.037407, 105.77493], [21.037357, 105.77509], [21.037208, 105.775581], [21.037173, 105.775696], [21.037151, 105.775767], [21.037123, 105.775858], [21.037093, 105.775951], [21.037067, 105.776031], [21.037056, 105.776066], [21.036979, 105.776335], [21.036903, 105.776337], [21.036882, 105.776339], [21.036858, 105.776337], [21.036839, 105.776337], [21.036775, 105.77634], [21.036336, 105.77636], [21.035825, 105.776156], [21.035682, 105.776171], [21.035594, 105.77618], [21.035519, 105.776161], [21.035204, 105.776074], [21.035303, 105.775858], [21.035354, 105.775755], [21.035379, 105.77567], [21.035383, 105.775607], [21.035415, 105.775555], [21.035458, 105.77549], [21.035483, 105.775437], [21.035519, 105.7754], [21.035545, 105.77534], [21.035575, 105.775242], [21.035562, 105.775199], [21.035529, 105.775126], [21.035479, 105.775056], [21.035434, 105.774977], [21.035479, 105.775056], [21.035529, 105.775126], [21.035562, 105.775199], [21.035575, 105.775242], [21.035545, 105.77534], [21.035519, 105.7754], [21.035483, 105.775437], [21.035458, 105.77549], [21.035415, 105.775555], [21.035383, 105.775607], [21.035383, 105.775607], [21.035379, 105.77567], [21.035354, 105.775755], [21.035303, 105.775858], [21.035204, 105.776074], [21.035519, 105.776161], [21.035594, 105.77618], [21.035682, 105.776171], [21.035825, 105.776156], [21.036336, 105.77636], [21.036775, 105.77634], [21.036839, 105.776337], [21.036858, 105.776337], [21.036882, 105.776339], [21.036903, 105.776337], [21.036979, 105.776335], [21.036824, 105.776856], [21.036685, 105.777375], [21.036643, 105.777603], [21.036586, 105.777927], [21.036544, 105.778286], [21.036509, 105.778844], [21.036507, 105.779295], [21.036506, 105.77942], [21.036506, 105.779477], [21.036505, 105.779511], [21.036414, 105.779562], [21.035801, 105.779874], [21.035533, 105.780013], [21.035401, 105.780075], [21.035313, 105.780114], [21.035285, 105.780126], [21.03526, 105.780152], [21.035098, 105.780138], [21.035012, 105.780124], [21.034801, 105.780083], [21.034769, 105.780076], [21.034738, 105.780071], [21.034228, 105.779981], [21.034174, 105.779972], [21.034132, 105.779965], [21.033824, 105.779917], [21.033677, 105.779928], [21.033353, 105.779874], [21.033315, 105.779868], [21.033322, 105.779793], [21.033326, 105.77976], [21.033333, 105.779709], [21.033386, 105.779279], [21.033421, 105.779], [21.033439, 105.778841], [21.033518, 105.778834], [21.033751, 105.778814], [21.033933, 105.778813], [21.034577, 105.77884], [21.034679, 105.778837], [21.034884, 105.778832], [21.035065, 105.778832], [21.035648, 105.778831], [21.035724, 105.778831], [21.036386, 105.778839], [21.036416, 105.778839], [21.036432, 105.77884], [21.036447, 105.77884], [21.036509, 105.778844], [21.036507, 105.779295], [21.036506, 105.77942], [21.036506, 105.779477], [21.036505, 105.779511], [21.036503, 105.779605], [21.0365, 105.779778], [21.036397, 105.780049], [21.036336, 105.780251], [21.036323, 105.78038], [21.036289, 105.780701], [21.036283, 105.780756], [21.036275, 105.78088], [21.036346, 105.78097], [21.036414, 105.781059], [21.036512, 105.78122], [21.03659, 105.781344], [21.036609, 105.781492], [21.036635, 105.781691], [21.036633, 105.781761], [21.036632, 105.781791], [21.036631, 105.781838], [21.03663, 105.781872], [21.036629, 105.781895], [21.036622, 105.782142], [21.0366, 105.782981], [21.036598, 105.783052], [21.036597, 105.783075], [21.036595, 105.783134], [21.036595, 105.783155], [21.036594, 105.783198], [21.036586, 105.783467], [21.036585, 105.783533], [21.036589, 105.783587], [21.036577, 105.784103], [21.036576, 105.784153], [21.036676, 105.784159], [21.036677, 105.784108], [21.036687, 105.783778], [21.036694, 105.783555], [21.036702, 105.783323], [21.036712, 105.783029], [21.036721, 105.782715], [21.036739, 105.782056], [21.036782, 105.782057], [21.036798, 105.782058], [21.036825, 105.782058], [21.036844, 105.782059], [21.036906, 105.782061], [21.036924, 105.782062], [21.037128, 105.782068], [21.037159, 105.782069], [21.037189, 105.78207], [21.037676, 105.782085], [21.03768, 105.781945], [21.03786, 105.781804], [21.038025, 105.781691], [21.038373, 105.781696], [21.038358, 105.782338], [21.03814, 105.782333], [21.038125, 105.782333], [21.038089, 105.782332], [21.038054, 105.782331], [21.03785, 105.782326], [21.037761, 105.782324], [21.03767, 105.782321], [21.037669, 105.782378], [21.037653, 105.782975], [21.037646, 105.783244], [21.03764, 105.783444], [21.037633, 105.783728], [21.03751, 105.783724], [21.03749, 105.783724], [21.03747, 105.783723], [21.037348, 105.78372], [21.037164, 105.783715], [21.037087, 105.783713], [21.03699, 105.78371], [21.036994, 105.78357], [21.037001, 105.783325], [21.037008, 105.783082], [21.037012, 105.782961], [21.037141, 105.782963], [21.03715, 105.782964], [21.037248, 105.782966], [21.037374, 105.782968], [21.03737, 105.783109], [21.037361, 105.783331], [21.037357, 105.783431], [21.037353, 105.783555], [21.037348, 105.78372], [21.03747, 105.783723], [21.03749, 105.783724], [21.03751, 105.783724], [21.037633, 105.783728], [21.0377, 105.783729], [21.037898, 105.783735], [21.038047, 105.783739], [21.038218, 105.783744], [21.038269, 105.783745], [21.038532, 105.783752], [21.038516, 105.78444], [21.038505, 105.784909], [21.038499, 105.785142], [21.038498, 105.785208], [21.038432, 105.785205], [21.037796, 105.785178], [21.037595, 105.78517], [21.03695, 105.785143], [21.036756, 105.785134], [21.03673, 105.785133], [21.036705, 105.785132], [21.036652, 105.78513], [21.036654, 105.785061], [21.036672, 105.784404], [21.03667, 105.784345], [21.036571, 105.784343], [21.03657, 105.784403], [21.03656, 105.784646], [21.036559, 105.784709], [21.036558, 105.784746], [21.036557, 105.784781], [21.036556, 105.784816], [21.036555, 105.784882], [21.036535, 105.785412], [21.036534, 105.785465], [21.036533, 105.785519], [21.036531, 105.785562], [21.03653, 105.785593], [21.036529, 105.785642], [21.036526, 105.785692], [21.036521, 105.78581], [21.036519, 105.785862], [21.036514, 105.786043], [21.036513, 105.786092], [21.03651, 105.786255], [21.036509, 105.786308], [21.036507, 105.786354], [21.036495, 105.786653], [21.036492, 105.786707], [21.03649, 105.786763], [21.03644, 105.787638], [21.036435, 105.78773], [21.036431, 105.787956], [21.03642, 105.788036], [21.036418, 105.788086], [21.036416, 105.78813], [21.036395, 105.788474], [21.036392, 105.788532], [21.036391, 105.788558], [21.036378, 105.788824], [21.036377, 105.788866], [21.036375, 105.788904], [21.036368, 105.789143], [21.036271, 105.789251], [21.036247, 105.789272], [21.036238, 105.78928], [21.036219, 105.789296], [21.03621, 105.789305], [21.036197, 105.789317], [21.036148, 105.78936], [21.036055, 105.78939], [21.035948, 105.789363], [21.035392, 105.789238], [21.035193, 105.789188], [21.034841, 105.789104], [21.034613, 105.789045], [21.034438, 105.789002], [21.034371, 105.788983], [21.034173, 105.788935], [21.033682, 105.788816], [21.033446, 105.788759], [21.033271, 105.788716], [21.033091, 105.788676], [21.031965, 105.788399], [21.031831, 105.788363], [21.031678, 105.788321], [21.030567, 105.788054], [21.030423, 105.788015], [21.030334, 105.787989], [21.030231, 105.78796], [21.030201, 105.788125], [21.030195, 105.788209], [21.030188, 105.788374], [21.030164, 105.788558], [21.030187, 105.788676], [21.030077, 105.789375], [21.03004, 105.789591], [21.029849, 105.789544], [21.029528, 105.789467], [21.028833, 105.789305], [21.028663, 105.789271], [21.028402, 105.789219], [21.028387, 105.789212], [21.028349, 105.789206], [21.028307, 105.789201], [21.028266, 105.789198], [21.028206, 105.789201], [21.028149, 105.78921], [21.028092, 105.789226], [21.028026, 105.789249], [21.027965, 105.789276], [21.027821, 105.789335], [21.027707, 105.789393], [21.027598, 105.789464], [21.027529, 105.789517], [21.027498, 105.789541], [21.027414, 105.789623], [21.027341, 105.789697], [21.02733, 105.789708], [21.027116, 105.789947], [21.026943, 105.790139], [21.026878, 105.79021], [21.026206, 105.790941], [21.026149, 105.791002], [21.026039, 105.79113], [21.025814, 105.791366], [21.025643, 105.791544], [21.025601, 105.791576], [21.025556, 105.791584], [21.025702, 105.791809], [21.025793, 105.791947], [21.025485, 105.792214], [21.025259, 105.79241], [21.025185, 105.792406], [21.025139, 105.792413], [21.025068, 105.792426], [21.025056, 105.792413], [21.024845, 105.792132], [21.024817, 105.792095], [21.024798, 105.79207], [21.024609, 105.791823], [21.024518, 105.791701], [21.024451, 105.791612], [21.024096, 105.791144], [21.023857, 105.790828], [21.02381, 105.790766], [21.023581, 105.790452], [21.023538, 105.790407], [21.023502, 105.79036], [21.023355, 105.790166], [21.023346, 105.790154], [21.023299, 105.79009], [21.023231, 105.78999], [21.02318, 105.789916], [21.023167, 105.789898], [21.023021, 105.789693], [21.022993, 105.789651], [21.022957, 105.789596], [21.022794, 105.789353], [21.022528, 105.788973], [21.022268, 105.788603], [21.022134, 105.788409], [21.021723, 105.787816], [21.021495, 105.787493], [21.021472, 105.78746], [21.02132, 105.787237], [21.02117, 105.787033], [21.021147, 105.787002], [21.020784, 105.786498], [21.020603, 105.786242], [21.020547, 105.786161], [21.02042, 105.78598], [21.020308, 105.785839], [21.020292, 105.785819], [21.020205, 105.785693], [21.020121, 105.785573], [21.020089, 105.785525], [21.019966, 105.785342], [21.019658, 105.784901], [21.019408, 105.784524], [21.019379, 105.784486], [21.019251, 105.784327], [21.01918, 105.784238], [21.019182, 105.784216], [21.01918, 105.784193], [21.019166, 105.78416], [21.019143, 105.784134], [21.019115, 105.784118], [21.019095, 105.784113], [21.019075, 105.784113], [21.019023, 105.78403], [21.018913, 105.783879], [21.018874, 105.783827], [21.01856, 105.783377], [21.018518, 105.783316], [21.018478, 105.783264], [21.018438, 105.783215], [21.018398, 105.783159], [21.018134, 105.782786], [21.017892, 105.782426], [21.017874, 105.7824], [21.017816, 105.782311], [21.0176, 105.782004], [21.01751, 105.781879], [21.01728, 105.781561], [21.017223, 105.78148], [21.017147, 105.781371], [21.016424, 105.780362], [21.016315, 105.780214], [21.016228, 105.780052], [21.016098, 105.779865], [21.015686, 105.779293], [21.015653, 105.779248], [21.015523, 105.779362], [21.015552, 105.779403], [21.015886, 105.779868], [21.015966, 105.779982], [21.016179, 105.780289], [21.016202, 105.780318], [21.016307, 105.780458], [21.01686, 105.781235], [21.017023, 105.78147], [21.017075, 105.781552], [21.017147, 105.781657], [21.017247, 105.781799], [21.017376, 105.781983], [21.017462, 105.782117], [21.017357, 105.782206], [21.01692, 105.782596], [21.016713, 105.782769], [21.016668, 105.782807], [21.016615, 105.782852], [21.016113, 105.783242], [21.016008, 105.783324], [21.015735, 105.783554], [21.015685, 105.783598], [21.015632, 105.783639], [21.014883, 105.784249], [21.014833, 105.78429], [21.014045, 105.784901], [21.013935, 105.784995], [21.012604, 105.7861], [21.012534, 105.786154], [21.012379, 105.786281], [21.012259, 105.78638], [21.012195, 105.786432], [21.012043, 105.786546], [21.011961, 105.786607], [21.011904, 105.786649], [21.011859, 105.786681], [21.011703, 105.7868], [21.011571, 105.786911], [21.011561, 105.78692], [21.011537, 105.78694], [21.011019, 105.787377], [21.010665, 105.787658], [21.010607, 105.78758], [21.010589, 105.787555], [21.010564, 105.787521], [21.010525, 105.787468], [21.010184, 105.787004], [21.010038, 105.787125], [21.009748, 105.787367], [21.008887, 105.788037], [21.008812, 105.788096], [21.008606, 105.78828], [21.007802, 105.788917], [21.006795, 105.789723], [21.006012, 105.788632], [21.006555, 105.788172], [21.006831, 105.787938], [21.007181, 105.787659], [21.007538, 105.78739], [21.007659, 105.787292], [21.007948, 105.787049], [21.008013, 105.786983], [21.008068, 105.78706], [21.008812, 105.788096], [21.008887, 105.788037], [21.009748, 105.787367], [21.010038, 105.787125], [21.010184, 105.787004], [21.010525, 105.787468], [21.010564, 105.787521], [21.010589, 105.787555], [21.010607, 105.78758], [21.010665, 105.787658], [21.010527, 105.787768], [21.009704, 105.788426], [21.009525, 105.788563], [21.00949, 105.788589], [21.009394, 105.788658], [21.00931, 105.788717], [21.009529, 105.789027], [21.009557, 105.789069], [21.009626, 105.789172], [21.009831, 105.789444], [21.009855, 105.789476], [21.009884, 105.789517], [21.009988, 105.789662], [21.010193, 105.789949], [21.010211, 105.789974], [21.010227, 105.789996], [21.010316, 105.790122], [21.010376, 105.790205], [21.010508, 105.790372], [21.010525, 105.790394], [21.010537, 105.79041], [21.010749, 105.790703], [21.010758, 105.790715], [21.010766, 105.790728], [21.010782, 105.79075], [21.010795, 105.79077], [21.011028, 105.791114], [21.011054, 105.791151], [21.011135, 105.791271], [21.011215, 105.791383], [21.011228, 105.791402], [21.011249, 105.791432], [21.011262, 105.79145], [21.011481, 105.791755], [21.011497, 105.791778], [21.011802, 105.792201], [21.011834, 105.792245], [21.01192, 105.792363], [21.011805, 105.792453], [21.011786, 105.792468], [21.011763, 105.792486], [21.011661, 105.792573], [21.011583, 105.792639], [21.011292, 105.792884], [21.011209, 105.79295], [21.01115, 105.792999], [21.011058, 105.793075], [21.010544, 105.793504], [21.010442, 105.793527], [21.010376, 105.793575], [21.010348, 105.793596], [21.010285, 105.793643], [21.010155, 105.793743], [21.010013, 105.793851], [21.009877, 105.793957], [21.009857, 105.793974], [21.009841, 105.793987], [21.009297, 105.794425], [21.009197, 105.79448], [21.00865, 105.794916], [21.008602, 105.794954], [21.008539, 105.794873], [21.00852, 105.794846], [21.008249, 105.794473], [21.007927, 105.794048], [21.00791, 105.793995], [21.007914, 105.793941], [21.007866, 105.793869], [21.007787, 105.793751], [21.007607, 105.793906], [21.007381, 105.7941], [21.007226, 105.793878], [21.007121, 105.793734], [21.007027, 105.793605], [21.006949, 105.793492], [21.006824, 105.793318], [21.006694, 105.793142], [21.006677, 105.793114], [21.006563, 105.792922], [21.006555, 105.792603], [21.006545, 105.792077], [21.006772, 105.791907], [21.006986, 105.791726], [21.007213, 105.792053], [21.007259, 105.792058], [21.008221, 105.793381], [21.007787, 105.793751], [21.007866, 105.793869], [21.007914, 105.793941], [21.00791, 105.793995], [21.007927, 105.794048], [21.008249, 105.794473], [21.00852, 105.794846], [21.008539, 105.794873], [21.008602, 105.794954], [21.008564, 105.794986], [21.008078, 105.795385], [21.007869, 105.795564], [21.007832, 105.795596], [21.007767, 105.795655], [21.007605, 105.795791], [21.007697, 105.795919], [21.007764, 105.796009], [21.007772, 105.79602], [21.008, 105.796316], [21.008055, 105.796387], [21.007976, 105.796463], [21.007899, 105.796526], [21.007817, 105.796594], [21.007734, 105.796661], [21.007916, 105.796913], [21.007927, 105.797008], [21.007987, 105.79709], [21.008299, 105.797517], [21.008377, 105.797624], [21.008465, 105.797744], [21.008747, 105.797515], [21.008831, 105.797441], [21.008863, 105.797484], [21.009022, 105.7977], [21.009074, 105.797771], [21.009292, 105.798068], [21.009335, 105.798127], [21.009402, 105.798215], [21.009796, 105.798734], [21.010105, 105.79914], [21.010134, 105.799178], [21.010306, 105.799419], [21.010349, 105.799461], [21.010443, 105.799561], [21.01059, 105.799423], [21.010498, 105.799315], [21.010453, 105.799262], [21.010325, 105.799104], [21.010144, 105.79888], [21.009989, 105.798695], [21.009781, 105.798418], [21.009602, 105.798172], [21.009431, 105.797946], [21.009234, 105.797678], [21.009039, 105.797416], [21.008871, 105.797179], [21.008717, 105.796966], [21.008807, 105.796953], [21.009618, 105.796831], [21.010144, 105.796729], [21.010195, 105.796968], [21.010144, 105.796729], [21.009618, 105.796831], [21.009159, 105.7969], [21.008807, 105.796953], [21.008717, 105.796966], [21.008603, 105.796809], [21.008458, 105.796926], [21.008609, 105.797137], [21.008794, 105.79739], [21.008831, 105.797441], [21.008863, 105.797484], [21.009022, 105.7977], [21.009074, 105.797771], [21.009292, 105.798068], [21.009335, 105.798127], [21.009402, 105.798215], [21.009796, 105.798734], [21.010105, 105.79914], [21.010134, 105.799178], [21.010306, 105.799419], [21.010349, 105.799461], [21.010443, 105.799561], [21.010483, 105.799605], [21.010665, 105.799785], [21.010774, 105.799895], [21.01096, 105.800102], [21.011249, 105.80042], [21.01142, 105.800612], [21.011493, 105.800693], [21.011689, 105.800901], [21.011947, 105.801187], [21.011861, 105.801268], [21.011713, 105.801386], [21.01168, 105.801417], [21.011626, 105.80147], [21.011421, 105.801659], [21.011306, 105.801776], [21.011489, 105.801985], [21.011529, 105.80203], [21.011652, 105.80217], [21.011633, 105.802861], [21.011611, 105.802946], [21.011851, 105.80322], [21.011878, 105.803254], [21.012112, 105.803528], [21.012368, 105.803824], [21.012696, 105.803505], [21.012938, 105.803268], [21.012984, 105.803218], [21.01304, 105.803159], [21.01327, 105.802929], [21.013384, 105.802814], [21.013623, 105.803063], [21.01387, 105.803403], [21.014064, 105.803609], [21.014116, 105.803664], [21.014388, 105.803953], [21.014733, 105.804338], [21.014757, 105.804361], [21.014852, 105.804358], [21.014897, 105.804346], [21.01492, 105.804327], [21.014937, 105.8043], [21.014945, 105.804265], [21.014944, 105.80422], [21.014944, 105.804187], [21.014843, 105.804087], [21.014589, 105.803817], [21.014249, 105.803448], [21.01422, 105.803415], [21.014192, 105.803382], [21.014089, 105.803264], [21.013782, 105.802953], [21.013751, 105.802921], [21.013516, 105.802647], [21.013689, 105.802507], [21.01392, 105.802276], [21.014378, 105.801889], [21.014427, 105.80185], [21.01458, 105.801707], [21.015005, 105.801291], [21.015544, 105.800759], [21.01563, 105.800666], [21.015536, 105.800565], [21.015507, 105.800534], [21.015236, 105.800243], [21.015443, 105.800023], [21.015769, 105.799709], [21.016225, 105.799254], [21.016583, 105.799518], [21.01668, 105.799591], [21.017025, 105.799133], [21.017145, 105.798917], [21.017271, 105.798526], [21.017328, 105.798381], [21.017375, 105.798238], [21.017546, 105.797644], [21.017664, 105.797284], [21.017757, 105.796982], [21.017783, 105.796897], [21.017953, 105.796354], [21.018045, 105.796058], [21.018313, 105.79529], [21.018389, 105.795152], [21.018498, 105.794996], [21.018978, 105.794391], [21.01906, 105.794283], [21.019275, 105.794002], [21.019302, 105.79397], [21.019588, 105.793615], [21.019729, 105.793843], [21.019891, 105.794121], [21.020088, 105.794485], [21.020176, 105.794623], [21.020282, 105.794789], [21.020512, 105.795165], [21.020818, 105.795708], [21.021083, 105.796167], [21.021515, 105.796887], [21.02165, 105.797127], [21.021736, 105.797275], [21.021821, 105.797423], [21.021911, 105.797569], [21.022011, 105.797731], [21.022191, 105.798026], [21.022428, 105.798421], [21.022265, 105.798539], [21.021987, 105.798637], [21.02191, 105.798423], [21.021821, 105.798258], [21.021821, 105.798258], [21.02191, 105.798423], [21.021987, 105.798637], [21.022265, 105.798539], [21.022428, 105.798421], [21.022191, 105.798026], [21.022011, 105.797731], [21.021911, 105.797569], [21.021821, 105.797423], [21.021736, 105.797275], [21.02165, 105.797127], [21.021515, 105.796887], [21.021083, 105.796167], [21.020818, 105.795708], [21.020512, 105.795165], [21.020282, 105.794789], [21.020176, 105.794623], [21.020088, 105.794485], [21.019891, 105.794121], [21.019729, 105.793843], [21.019588, 105.793615], [21.01947, 105.793391], [21.019226, 105.792966], [21.019146, 105.792799], [21.019128, 105.792762], [21.019174, 105.792623], [21.019111, 105.792501], [21.019066, 105.792417], [21.019053, 105.792392], [21.019007, 105.792305], [21.018954, 105.792217], [21.018948, 105.792206], [21.018933, 105.792183], [21.018917, 105.792155], [21.018685, 105.791757], [21.018277, 105.791057], [21.018164, 105.790864], [21.018076, 105.790713], [21.018056, 105.79068], [21.017953, 105.790503], [21.017842, 105.79032], [21.017825, 105.79029], [21.017715, 105.79011], [21.017544, 105.790228], [21.0174, 105.790319], [21.017332, 105.790361], [21.017172, 105.790461], [21.017072, 105.790519], [21.017023, 105.790548], [21.016971, 105.79058], [21.016867, 105.790645], [21.016815, 105.790677], [21.016633, 105.790797], [21.01662, 105.790805], [21.016484, 105.790896], [21.016436, 105.790937], [21.016378, 105.791006], [21.015955, 105.791605], [21.015895, 105.791686], [21.015662, 105.791977], [21.015276, 105.792519], [21.015276, 105.792519], [21.01562, 105.792912], [21.015796, 105.792985], [21.016052, 105.793266], [21.0163, 105.793042], [21.016453, 105.793068], [21.016824, 105.792685], [21.016545, 105.792384], [21.015916, 105.791709], [21.015895, 105.791686], [21.015955, 105.791605], [21.016378, 105.791006], [21.016436, 105.790937], [21.016484, 105.790896], [21.01662, 105.790805], [21.016633, 105.790797], [21.016815, 105.790677], [21.016867, 105.790645], [21.016971, 105.79058], [21.017023, 105.790548], [21.017072, 105.790519], [21.017172, 105.790461], [21.017332, 105.790361], [21.0174, 105.790319], [21.017544, 105.790228], [21.017715, 105.79011], [21.017851, 105.790012], [21.017886, 105.789985], [21.018161, 105.789766], [21.018237, 105.789705], [21.018262, 105.789685], [21.01849, 105.789502], [21.018626, 105.789396], [21.018728, 105.789316], [21.018842, 105.789227], [21.018927, 105.789159], [21.019166, 105.788972], [21.01927, 105.788892], [21.01968, 105.788569], [21.019801, 105.78847], [21.019953, 105.788344], [21.020079, 105.788237], [21.020268, 105.788092], [21.020359, 105.78802], [21.020365, 105.788016], [21.020824, 105.787646], [21.021041, 105.787471], [21.021052, 105.787462], [21.021079, 105.78744], [21.021173, 105.787364], [21.02132, 105.787237], [21.021365, 105.787198], [21.021451, 105.787123], [21.021581, 105.787023], [21.021627, 105.786988], [21.022218, 105.786509], [21.022451, 105.786328], [21.022546, 105.786252], [21.022608, 105.786338], [21.022618, 105.786353], [21.022634, 105.78638], [21.022906, 105.786757], [21.023375, 105.787398], [21.023435, 105.787474], [21.023531, 105.787394], [21.023542, 105.787385], [21.023936, 105.787065], [21.0246, 105.786526], [21.02463, 105.786568], [21.02469, 105.786654], [21.024738, 105.786616], [21.024762, 105.786597], [21.025004, 105.786406], [21.025089, 105.78653], [21.025089, 105.78653], [21.02485, 105.78671], [21.024819, 105.786735], [21.024738, 105.786616], [21.02469, 105.786654], [21.02463, 105.786568], [21.0246, 105.786526], [21.024662, 105.786475], [21.024955, 105.786247], [21.02496, 105.786242], [21.025085, 105.786145], [21.024321, 105.785067], [21.024282, 105.785012], [21.024218, 105.784923], [21.024347, 105.784825], [21.024574, 105.784654], [21.024608, 105.784629], [21.024663, 105.784587], [21.024771, 105.784528], [21.024905, 105.784474], [21.025037, 105.784432], [21.025106, 105.784423], [21.025137, 105.784419], [21.025232, 105.784409], [21.02541, 105.784395], [21.025454, 105.784391], [21.025882, 105.784361], [21.026006, 105.784348], [21.026018, 105.784274], [21.026021, 105.784252], [21.026062, 105.783851], [21.026152, 105.783219], [21.026193, 105.782886], [21.026287, 105.782249], [21.02642, 105.781355], [21.026487, 105.78075], [21.026746, 105.779234], [21.026751, 105.779206], [21.026755, 105.779181], [21.026767, 105.77911], [21.02684, 105.779124], [21.026865, 105.779128], [21.027134, 105.779171], [21.027786, 105.779278], [21.028258, 105.779358], [21.028492, 105.779394], [21.028516, 105.779397], [21.028539, 105.779401], [21.028689, 105.77943], [21.028673, 105.779527], [21.02867, 105.77956], [21.028666, 105.779586], [21.028577, 105.780202], [21.028574, 105.780221], [21.028561, 105.780313], [21.028493, 105.780814], [21.02849, 105.78084], [21.028476, 105.780936], [21.028457, 105.781088], [21.028454, 105.781105], [21.02843, 105.781268], [21.028422, 105.781327], [21.028414, 105.78139], [21.02839, 105.781553], [21.028333, 105.78196], [21.028319, 105.782041], [21.028311, 105.782094], [21.028223, 105.78271], [21.028215, 105.782767], [21.028195, 105.782907], [21.028186, 105.782965], [21.02812, 105.783454], [21.028115, 105.7835], [21.028112, 105.783522], [21.0281, 105.783644], [21.028093, 105.783688], [21.028085, 105.783744], [21.028038, 105.783994], [21.028032, 105.784022], [21.028012, 105.784176], [21.027995, 105.784294], [21.027993, 105.78431], [21.027977, 105.784473], [21.027896, 105.78497], [21.02789, 105.785016], [21.027882, 105.785071], [21.027871, 105.785157], [21.027842, 105.785341], [21.027838, 105.785366], [21.027812, 105.785549], [21.027941, 105.785568], [21.027972, 105.785385], [21.027976, 105.785362], [21.028053, 105.784829], [21.028109, 105.784446], [21.028116, 105.784391], [21.028123, 105.78432], [21.028127, 105.784298], [21.028143, 105.784168], [21.028147, 105.784137], [21.02816, 105.784031], [21.028163, 105.784004], [21.028204, 105.783758], [21.028219, 105.783658], [21.028237, 105.783537], [21.02824, 105.783517], [21.028246, 105.783476], [21.028256, 105.783406], [21.028258, 105.783381], [21.028261, 105.783361], [21.028296, 105.783132], [21.028301, 105.783103], [21.028304, 105.783075], [21.028342, 105.782809], [21.028347, 105.78278], [21.028352, 105.782753], [21.028374, 105.782564], [21.028377, 105.782541], [21.028382, 105.782512], [21.028527, 105.781486], [21.028538, 105.781409], [21.028599, 105.781418], [21.028627, 105.781422], [21.029161, 105.7815], [21.029194, 105.781505], [21.029322, 105.781523], [21.030011, 105.781623], [21.030108, 105.781638], [21.029991, 105.782441], [21.02994, 105.782752], [21.029897, 105.783031], [21.029895, 105.783046], [21.029882, 105.783135], [21.02982, 105.783542], [21.030311, 105.783507], [21.030482, 105.782323], [21.031038, 105.782414], [21.03106, 105.782418], [21.031084, 105.782421], [21.03115, 105.782432], [21.031069, 105.782961], [21.031017, 105.7833], [21.030991, 105.783455], [21.030972, 105.783579], [21.030931, 105.783829], [21.030918, 105.783921], [21.030891, 105.784088], [21.030795, 105.784661], [21.030746, 105.78496], [21.03073, 105.785088], [21.030703, 105.78527], [21.030644, 105.785654], [21.030638, 105.785697], [21.030632, 105.785738], [21.030611, 105.785886], [21.030585, 105.786065], [21.030565, 105.786194], [21.030557, 105.786245], [21.030532, 105.786402], [21.030507, 105.786566], [21.030483, 105.786719], [21.030468, 105.78681], [21.030459, 105.786867], [21.030454, 105.786899], [21.030402, 105.787207], [21.030354, 105.7875], [21.030314, 105.787547], [21.03028, 105.787709], [21.030245, 105.787886], [21.030243, 105.787893], [21.030231, 105.78796], [21.030201, 105.788125], [21.030195, 105.788209], [21.030188, 105.788374], [21.030164, 105.788558], [21.030187, 105.788676], [21.030077, 105.789375], [21.03004, 105.789591], [21.030002, 105.789791], [21.029803, 105.790855], [21.029758, 105.791095], [21.029731, 105.791226], [21.029662, 105.791498], [21.029601, 105.79174], [21.029567, 105.791872], [21.029669, 105.791912], [21.029989, 105.792025], [21.030361, 105.79215], [21.030542, 105.792218], [21.03061, 105.792241], [21.030959, 105.792369], [21.031138, 105.792485], [21.03136, 105.792628], [21.031512, 105.792726], [21.03165, 105.792818], [21.031869, 105.792957], [21.032356, 105.793262], [21.032547, 105.793366], [21.032779, 105.793464], [21.033181, 105.793625], [21.033251, 105.793653], [21.033209, 105.793748], [21.033105, 105.793962], [21.033009, 105.794123], [21.032957, 105.794232], [21.03293, 105.794383], [21.032915, 105.794556], [21.033038, 105.794642], [21.033042, 105.794634], [21.033116, 105.794477], [21.033246, 105.794314], [21.033353, 105.794185], [21.033461, 105.794245], [21.033531, 105.794313], [21.03357, 105.794344], [21.033531, 105.794313], [21.033485, 105.794269], [21.033461, 105.794245], [21.033353, 105.794185], [21.033246, 105.794314], [21.033116, 105.794477], [21.033042, 105.794634], [21.033038, 105.794642], [21.032915, 105.794556], [21.03293, 105.794383], [21.032957, 105.794232], [21.033009, 105.794123], [21.033105, 105.793962], [21.033209, 105.793748], [21.033251, 105.793653], [21.033708, 105.793836], [21.033857, 105.793935], [21.033891, 105.793958], [21.033994, 105.794036], [21.034233, 105.794219], [21.034699, 105.794553], [21.034721, 105.794572], [21.034766, 105.794613], [21.034595, 105.795141], [21.034503, 105.795445], [21.034364, 105.79589], [21.03432, 105.796034], [21.034272, 105.796196], [21.034265, 105.796221], [21.034394, 105.796262], [21.034402, 105.796236], [21.034481, 105.795979], [21.034726, 105.79518], [21.034773, 105.795184], [21.03496, 105.7952], [21.035113, 105.795208], [21.035354, 105.795214], [21.03546, 105.795187], [21.035538, 105.795163], [21.035526, 105.795002], [21.035597, 105.794814], [21.035758, 105.794757], [21.035876, 105.794716], [21.03599, 105.79454], [21.035858, 105.794349], [21.035564, 105.794252], [21.035482, 105.794225], [21.03527, 105.794156], [21.035128, 105.794106], [21.035089, 105.794092], [21.035203, 105.793754], [21.035247, 105.793632], [21.035274, 105.793547], [21.035153, 105.793481], [21.035121, 105.793567], [21.035073, 105.793696], [21.035002, 105.793886], [21.034766, 105.794613], [21.034595, 105.795141], [21.034503, 105.795445], [21.034364, 105.79589], [21.03432, 105.796034], [21.034272, 105.796196], [21.034265, 105.796221], [21.03411, 105.796742], [21.034054, 105.796912], [21.033983, 105.796938], [21.033896, 105.79697], [21.033869, 105.796975], [21.033657, 105.79701], [21.033449, 105.797015], [21.033865, 105.797192], [21.03392, 105.797215], [21.033853, 105.797324], [21.03378, 105.797425], [21.033686, 105.797531], [21.033566, 105.797663], [21.033559, 105.79767], [21.033485, 105.797746], [21.03344, 105.797792], [21.03315, 105.798084], [21.032744, 105.798491], [21.032496, 105.798753], [21.032302, 105.798958], [21.031915, 105.799367], [21.0319, 105.799381], [21.031805, 105.799479], [21.031414, 105.79988], [21.031079, 105.800223], [21.030883, 105.800418], [21.030533, 105.800792], [21.030407, 105.800945], [21.030345, 105.801032], [21.030321, 105.801069], [21.030277, 105.801137], [21.03009, 105.801418], [21.030066, 105.801445], [21.030011, 105.801515], [21.029838, 105.80174], [21.029797, 105.801789], [21.029564, 105.802049], [21.029513, 105.802106], [21.0294, 105.802296], [21.029335, 105.802426], [21.029244, 105.802609], [21.02898, 105.803141], [21.028894, 105.803328], [21.028548, 105.804074], [21.028487, 105.804206], [21.028414, 105.804365], [21.028251, 105.804724], [21.028211, 105.804807], [21.028184, 105.804872], [21.028129, 105.805007], [21.028056, 105.805213], [21.028045, 105.805245], [21.028027, 105.8053], [21.028026, 105.805392], [21.028053, 105.805479], [21.028104, 105.805553], [21.028175, 105.805606], [21.028215, 105.805625], [21.028261, 105.805631], [21.028344, 105.805627], [21.028424, 105.805593], [21.028468, 105.805554], [21.02849, 105.805534], [21.028502, 105.805511], [21.028535, 105.805453], [21.028547, 105.805421], [21.028585, 105.805324], [21.02861, 105.80526], [21.028639, 105.805181], [21.028677, 105.805068], [21.028726, 105.804881], [21.028783, 105.804682], [21.028856, 105.804479], [21.02896, 105.804216], [21.029225, 105.803654], [21.029283, 105.803534], [21.029491, 105.803101], [21.029676, 105.802717], [21.02972, 105.802619], [21.029849, 105.802588], [21.030173, 105.802509], [21.03021, 105.8025], [21.030279, 105.802497], [21.030342, 105.802509], [21.030416, 105.802543], [21.030856, 105.80288], [21.030822, 105.80293], [21.030825, 105.802995], [21.031109, 105.803229], [21.031276, 105.803422], [21.031335, 105.803479], [21.03141, 105.803546], [21.031492, 105.803621], [21.031522, 105.803748], [21.031471, 105.803805], [21.031397, 105.803804], [21.031348, 105.803748], [21.031336, 105.803693], [21.031315, 105.803598], [21.031276, 105.803422], [21.031109, 105.803229], [21.030825, 105.802995], [21.030825, 105.802995], [21.030822, 105.80293], [21.030856, 105.80288], [21.031103, 105.80305], [21.031177, 105.80311], [21.031521, 105.803361], [21.031784, 105.803552], [21.032673, 105.804172], [21.033074, 105.804436], [21.033172, 105.804501], [21.033622, 105.804787], [21.033837, 105.804923], [21.034017, 105.805039], [21.034145, 105.805144], [21.034241, 105.805215], [21.034383, 105.805308], [21.034552, 105.805065], [21.03462, 105.804969], [21.034633, 105.804952], [21.034854, 105.804672], [21.034894, 105.804618], [21.034978, 105.804505], [21.035, 105.804478], [21.035433, 105.803929], [21.035614, 105.803691], [21.036012, 105.803182], [21.036364, 105.802735], [21.036386, 105.802706], [21.03661, 105.802423], [21.036911, 105.802044], [21.036988, 105.801946], [21.037063, 105.801853], [21.037833, 105.800883], [21.038521, 105.800011], [21.038652, 105.799854], [21.038702, 105.799789], [21.038796, 105.799668], [21.038852, 105.799594], [21.038901, 105.799526], [21.038954, 105.799441], [21.038993, 105.799362], [21.039033, 105.799263], [21.039072, 105.799151], [21.039082, 105.799113], [21.039096, 105.799064], [21.039116, 105.79896], [21.039126, 105.798845], [21.039126, 105.7986], [21.039122, 105.798278], [21.03927, 105.798088], [21.039324, 105.798026], [21.039461, 105.797871], [21.039569, 105.797752], [21.039611, 105.797751], [21.040466, 105.797719], [21.041147, 105.79772], [21.041204, 105.797719], [21.041204, 105.797814], [21.041204, 105.797982], [21.041204, 105.798395], [21.041203, 105.798715], [21.041203, 105.799033], [21.041203, 105.798715], [21.041203, 105.798715], [21.041204, 105.798395], [21.041204, 105.797982], [21.041204, 105.797814], [21.041204, 105.797719], [21.041489, 105.797715], [21.04209, 105.797716], [21.042782, 105.797718], [21.042873, 105.797723], [21.042855, 105.79753], [21.042842, 105.797385], [21.042844, 105.797101], [21.04285, 105.796749], [21.042849, 105.796701], [21.042839, 105.796637], [21.042801, 105.796572], [21.042596, 105.796237], [21.042243, 105.795668], [21.042293, 105.795633], [21.042765, 105.795305], [21.042902, 105.79521], [21.04297, 105.795163], [21.043288, 105.795164], [21.043287, 105.795686], [21.043286, 105.796236], [21.043191, 105.796239], [21.043197, 105.796636], [21.042906, 105.796637], [21.042839, 105.796637], [21.042849, 105.796701], [21.04285, 105.796749], [21.042844, 105.797101], [21.042842, 105.797385], [21.042855, 105.79753], [21.042873, 105.797723], [21.042876, 105.797843], [21.042876, 105.79895], [21.042167, 105.798954], [21.042167, 105.798954], [21.042167, 105.798994], [21.042166, 105.799372], [21.042981, 105.799371], [21.043263, 105.799376], [21.043506, 105.799378], [21.043587, 105.799376], [21.044402, 105.799363], [21.044793, 105.79936], [21.045106, 105.799357], [21.04527, 105.799356], [21.045758, 105.799352], [21.04603, 105.79935], [21.04612, 105.79935], [21.046125, 105.800398], [21.046127, 105.80079], [21.046128, 105.800946], [21.046128, 105.80097], [21.046129, 105.801108], [21.04613, 105.801301], [21.04613, 105.801347], [21.046132, 105.801434], [21.046133, 105.801839], [21.046133, 105.801881], [21.046133, 105.801903], [21.046133, 105.801922], [21.046133, 105.801963], [21.046136, 105.802371], [21.046136, 105.802517], [21.046137, 105.802617], [21.046136, 105.803061], [21.046136, 105.803266], [21.045819, 105.803265], [21.04582, 105.803109], [21.04582, 105.803062], [21.045823, 105.80267], [21.04582, 105.803062], [21.045819, 105.803265], [21.046136, 105.803266], [21.046135, 105.804226], [21.046135, 105.804367], [21.046134, 105.804807], [21.046134, 105.804953], [21.046131, 105.805019], [21.046133, 105.805235], [21.046321, 105.805228], [21.046317, 105.804952], [21.046317, 105.80454], [21.046317, 105.804396], [21.046317, 105.804366], [21.046316, 105.804013], [21.046316, 105.803636], [21.046316, 105.803193], [21.046315, 105.802617], [21.046315, 105.802428], [21.046315, 105.802212], [21.046314, 105.801108], [21.046314, 105.800948], [21.046314, 105.800791], [21.046313, 105.800393], [21.046311, 105.799502], [21.046311, 105.799436], [21.046308, 105.799014], [21.046309, 105.798926], [21.046309, 105.798733], [21.046308, 105.79819], [21.046308, 105.798163], [21.046493, 105.79793], [21.046605, 105.797793], [21.046791, 105.797779], [21.047179, 105.797777], [21.048165, 105.797772], [21.04838, 105.797746], [21.048879, 105.797752], [21.04921, 105.797772], [21.049875, 105.797771], [21.049978, 105.79777], [21.050289, 105.797771], [21.051308, 105.797769], [21.051467, 105.79777], [21.051573, 105.79777], [21.051719, 105.79777], [21.051809, 105.79777], [21.051932, 105.797769], [21.051937, 105.797512], [21.051937, 105.797405], [21.051936, 105.79719], [21.051934, 105.795118], [21.051933, 105.794947], [21.051933, 105.79477], [21.051926, 105.792978], [21.051924, 105.790528]],
+                {"bubblingMouseEvents": true, "color": "#800080", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#800080", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_e40cdddcb7c97ce5403984dbbf23f8f6);
+        
+</script>
+</html>
