@@ -1,0 +1,64 @@
+import plotly.graph_objects as go
+import os
+import webbrowser
+
+# 1. Dữ liệu tổng hợp từ kết quả chạy 5 bộ dữ liệu ngẫu nhiên cho mỗi cấu hình
+configs = ['Uniform (N=128)', 'Clustered (N=128)', 'Uniform (N=256)', 'Clustered (N=256)']
+
+# Giá trị trung bình (Mean)
+nn_mean = [10323.7, 4110.0, 15312.8, 5811.8]
+fi_mean = [9151.5, 3458.0, 13205.4, 5082.9]
+cw_mean = [9154.9, 3648.2, 13273.6, 5225.1]
+
+# Độ lệch chuẩn (Standard Deviation)
+nn_std = [593.5, 390.8, 357.8, 472.1]
+fi_std = [220.5, 164.2, 246.2, 348.7]
+cw_std = [286.2, 138.2, 305.4, 370.6]
+
+# 2. Khởi tạo biểu đồ
+fig = go.Figure()
+
+# Hàm vẽ cột kèm thanh sai số
+def add_bar_with_error(name, means, stds, color):
+    fig.add_trace(go.Bar(
+        x=configs, 
+        y=means,
+        name=name,
+        marker_color=color,
+        error_y=dict(
+            type='data', array=stds, 
+            visible=True, thickness=1.5, width=4, color='black'
+        ),
+        text=[f"{val:,.0f}" for val in means],
+        textposition='auto'
+    ))
+
+add_bar_with_error('Tham lam (NN)', nn_mean, nn_std, 'royalblue')
+add_bar_with_error('Chèn xa nhất (FI)', fi_mean, fi_std, 'indianred')
+add_bar_with_error('Clarke-Wright (CW)', cw_mean, cw_std, 'mediumseagreen')
+
+# 3. Cấu hình giao diện biểu đồ
+fig.update_layout(
+    title_text="Đánh giá Tính ổn định (Mean & Std) trên nhiều nhóm dữ liệu",
+    title_x=0.5,
+    plot_bgcolor='white',
+    barmode='group',
+    yaxis_title="Tổng chi phí lộ trình trung bình (Cost)",
+    legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="center", x=0.5),
+    width=1100, 
+    height=600
+)
+
+# Kẻ viền và lưới
+fig.update_xaxes(showline=True, linewidth=1.5, linecolor='black')
+fig.update_yaxes(showline=True, linewidth=1.5, linecolor='black', gridcolor='whitesmoke')
+
+# 4. Xuất file HTML và hiển thị
+output_dir = r"C:\test-prj\TSP_update\MPTN"
+os.makedirs(output_dir, exist_ok=True)
+
+output_filename = os.path.join(output_dir, "danh_gia_tinh_on_dinh_tong_hop.html")
+fig.write_html(output_filename)
+
+print(f"Đã xuất biểu đồ Tính ổn định tổng hợp tại: {output_filename}")
+webbrowser.open('file://' + os.path.realpath(output_filename))
