@@ -1,0 +1,86 @@
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import os
+
+# Danh sách kích thước N theo yêu cầu
+N_LIST = [8, 13, 16, 20, 32, 64, 128, 256]
+OUTPUT_DIR = "tsp_datasets"
+os.makedirs(OUTPUT_DIR, exist_ok=True)
+
+def generate_uniform(n, seed=42):
+    """Phân bố đều (Uniform Random) - Dữ liệu cơ sở"""
+    np.random.seed(seed)
+    x = np.random.uniform(0, 100, n)
+    y = np.random.uniform(0, 100, n)
+    return x, y
+
+def generate_clustered_with_outliers(n, num_clusters=3, outlier_ratio=0.1, seed=42):
+    """Phân cụm có điểm ngoại lai - Thử thách cho thuật toán Tham lam, tối ưu cho Chèn xa nhất"""
+    np.random.seed(seed)
+    num_outliers = max(1, int(n * outlier_ratio))
+    num_cluster_points = n - num_outliers
+    
+    x, y = [], []
+    # Sinh các điểm ngoại lai ở sát biên
+    for _ in range(num_outliers):
+        x.append(np.random.choice([np.random.uniform(0, 10), np.random.uniform(90, 100)]))
+        y.append(np.random.choice([np.random.uniform(0, 10), np.random.uniform(90, 100)]))
+        
+    # Sinh các cụm điểm ở giữa
+    points_per_cluster = num_cluster_points // num_clusters
+    for _ in range(num_clusters):
+        cx, cy = np.random.uniform(20, 80), np.random.uniform(20, 80)
+        for _ in range(points_per_cluster):
+            x.append(np.clip(np.random.normal(cx, 5), 0, 100))
+            y.append(np.clip(np.random.normal(cy, 5), 0, 100))
+            
+    # Xử lý phần dư nếu chia không hết
+    while len(x) < n:
+        x.append(np.random.uniform(20, 80))
+        y.append(np.random.uniform(20, 80))
+        
+    return np.array(x), np.array(y)
+
+def generate_depot_centric(n, seed=42):
+    """Phân bố hướng tâm hình nan quạt - Tối ưu cho Clarke-Wright Savings"""
+    np.random.seed(seed)
+    x, y = [50.0], [50.0] # Đỉnh 0 (Depot) luôn ở tọa độ (50, 50)
+    
+    # Sinh các điểm còn lại theo tọa độ cực (bán kính và góc)
+    r = np.random.uniform(10, 45, n - 1)
+    theta = np.random.uniform(0, 2*np.pi, n - 1)
+    
+    x.extend(50.0 + r * np.cos(theta))
+    y.extend(50.0 + r * np.sin(theta))
+    return np.array(x), np.array(y)
+
+# Sinh, lưu file và vẽ hình mẫu
+for n in N_LIST:
+    datasets = {
+        "Uniform": generate_uniform(n),
+        "Clustered": generate_clustered_with_outliers(n),
+        "DepotCentric": generate_depot_centric(n)
+    }
+    
+    for dist_type, (x, y) in datasets.items():
+        # Lưu ra file CSV
+        df = pd.DataFrame({"id": range(n), "x": x, "y": y})
+        filename = f"{OUTPUT_DIR}/cities_{n}_{dist_type}.csv"
+        df.to_csv(filename, index=False)
+        
+        # Chỉ vẽ trực quan hóa cho N = 32 để xem mẫu trong báo cáo
+        if n == 32:
+            plt.figure(figsize=(5, 5))
+            plt.scatter(x, y, c='blue', s=30, zorder=2)
+            if dist_type == "DepotCentric":
+                plt.scatter(x[0], y[0], c='red', marker='*', s=200, label='Depot (0)', zorder=3)
+                plt.legend()
+            plt.title(f"Phân bố {dist_type} (N={n})")
+            plt.xlim(0, 100)
+            plt.ylim(0, 100)
+            plt.grid(True, linestyle='--', alpha=0.6)
+            plt.savefig(f"{OUTPUT_DIR}/plot_32_{dist_type}.png", bbox_inches='tight')
+            plt.close()
+
+print(f"Đã tạo thành công {len(N_LIST) * 3} bộ dữ liệu trong thư mục '{OUTPUT_DIR}'.")
